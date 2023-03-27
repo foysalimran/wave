@@ -2276,7 +2276,7 @@ video {
 }
 
 .button-primary {
-  padding: 18px 42px 17px;
+  padding: 18px 79px 18px 29px;
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 35px;
@@ -2291,8 +2291,23 @@ video {
   right: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 105 255 / var(--tw-bg-opacity));
-  padding: 18px 19px;
+  padding: 20px;
   border-radius: 0px 30px 30px 30px;
+}
+
+.button-primary .button-icon img {
+  width: 23px;
+  height: 23px;
+}
+
+.button-secondary {
+  padding: 18px 40px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
+      no-repeat padding-box;
+  border-radius: 35px;
+  --tw-text-opacity: 1;
+  color: rgb(0 105 255 / var(--tw-text-opacity));
+  font-size: 18px;
 }
 
 .header .header-logo {
@@ -2324,7 +2339,11 @@ video {
   padding: 12px 59px 12px 26px;
 }
 
-.header ul li button img {
+.header ul li .button-primary .button-icon {
+  padding: 13px 14px;
+}
+
+.header ul li .button-primary img {
   width: 18px;
   height: 21px;
 }
