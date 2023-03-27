@@ -685,6 +685,14 @@ video {
   clear: none;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1281,6 +1289,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1767,12 +1779,20 @@ video {
      object-fit: scale-down;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -1834,6 +1854,16 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -1915,6 +1945,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 105 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2303,7 +2338,7 @@ video {
 .button-secondary {
   padding: 18px 40px;
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
-      no-repeat padding-box;
+    no-repeat padding-box;
   border-radius: 35px;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
@@ -2454,6 +2489,10 @@ video {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
   display: inline-block;
   border-radius: 10px;
+  position: absolute;
+  bottom: -50%;
+  left: 30px;
+  transform: translateY(-50%);
 }
 
 .banner-logo img {
