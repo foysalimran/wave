@@ -2,6 +2,197 @@
 @tailwind components;
 @tailwind utilities;
 
-.test {
-    @apply text-3xl font-bold
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-dark-secondary;
+}
+p {
+  @apply text-light-gray1;
+}
+body {
+  @apply bg-secondary;
+}
+.containers {
+  @apply container mx-auto px-4;
+}
+
+.button-primary {
+  padding: 18px 79px 18px 29px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 35px;
+  @apply text-primary;
+  font-size: 18px;
+}
+.button-primary .button-icon {
+  @apply absolute top-0 right-0 bg-primary;
+  padding: 20px;
+  border-radius: 0px 30px 30px 30px;
+}
+.button-primary .button-icon img {
+  width: 23px;
+  height: 23px;
+}
+
+.button-secondary {
+  padding: 18px 40px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 35px;
+  @apply text-primary;
+  font-size: 18px;
+}
+/*PAGE TITLE*/
+.page-title {
+    @apply py-11 md:py-20;
+}
+.page-title h1 {
+    @apply text-3xl sm:text-5xl md:text-6xl;
+}
+/*HEADER CSS*/
+.header .header-logo {
+  width: 69px;
+  height: 65px;
+}
+.header ul li {
+  @apply text-base;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header ul a {
+  @apply text-dark-secondary;
+}
+.header ul li:not(:last-child) {
+  margin-right: 30px;
+}
+.header ul li:last-child {
+  padding-left: 30px;
+  border-left: 1px solid #e6efff;
+}
+.header ul li button {
+  @apply text-base;
+  padding: 12px 59px 12px 26px;
+}
+.header ul li .button-primary .button-icon {
+  padding: 13px 14px;
+}
+.header ul li .button-primary img {
+  width: 18px;
+  height: 21px;
+}
+
+.menu-toggle {
+  @apply w-8 h-5 flex flex-col cursor-pointer justify-between mt-5;
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 300ms ease;
+}
+.menu-toggle span {
+  @apply h-1 w-3 bg-dark;
+  transition: width 200ms ease;
+}
+.menu-toggle span:nth-child(1) {
+  width: 80%;
+  transition-delay: 200ms;
+}
+.menu-toggle span:nth-child(2) {
+  width: 100%;
+}
+.menu-toggle span:nth-child(3) {
+  width: 60%;
+  transition-delay: 400ms;
+}
+.menu-toggle span:nth-child(4) {
+  position: absolute;
+  @apply left-1/2 block w-1 h-0;
+  top: -6px;
+  transform: translateX(-50%);
+  transition: height 400ms;
+}
+.menu-active {
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition-delay: 400ms;
+}
+.menu-toggle.menu-active span:nth-child(1) {
+  width: 0;
+  transition: 200ms ease;
+}
+.menu-toggle.menu-active span:nth-child(3) {
+  width: 0;
+  transition: 200ms ease;
+  transition-delay: 150ms;
+}
+.menu-toggle.menu-active span:nth-child(4) {
+  @apply h-8;
+  transition: height 200ms ease;
+  transition-delay: 200ms;
+}
+
+.header .main-menu.menu-show {
+  @apply absolute flex flex-col w-full items-start bg-white px-4;
+  top: 118%;
+  transition: 200ms ease;
+}
+.header .main-menu.menu-show li {
+  margin: 0 !important;
+  border: none;
+  @apply p-3 w-full block;
+}
+.header .main-menu.menu-show li:not(:last-child) {
+  border-bottom: 1px solid #e6efff;
+}
+
+/*COMPANIES*/
+.companies .filter-item select {
+  @apply w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1;
+}
+.companies .filter-item p {
+  @apply pb-4 text-sm;
+}
+.companies .filter-item select:focus {
+  outline: none;
+}
+.companies .filter-item input {
+  @apply w-full;
+}
+.companies .category {
+  font-size: 14px;
+  @apply mb-3 sm:mb-5;
+}
+.companies .category span {
+  padding: 2px 10px;
+  border-radius: 5px;
+  @apply bg-primary text-white font-bold ml-2;
+}
+
+
+/* single company page  */
+.single-company-banner {
+  width: 100%;
+  height: 300px;
+}
+.banner-logo {
+  padding: 45px;
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+  display: inline-block;
+  border-radius: 10px;
+}
+.banner-logo img {
+  width: 71px;
+  height: 71px;
+}
+/* footer section  */
+.footer {
+  @apply border-t-2 border-solid pt-4 pb-3;
+  margin-top: 75px;
+}
+.footer p {
+  font-size: 14px;
+  @apply text-dark-secondary;
 }
