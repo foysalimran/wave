@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./assets/style.css -o ./assets/style.main.css --watch",
+    "tailwind": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/style.main.css --watch",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver tailwind"
   },
