@@ -649,6 +649,14 @@ video {
   left: -0.25rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1649,9 +1657,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(0 105 255 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1762,6 +1770,10 @@ video {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -2223,10 +2235,90 @@ video {
   content: var(--tw-content);
 }
 
-.test {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
+.containers {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .containers {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containers {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containers {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containers {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .containers {
+    max-width: 1536px;
+  }
+}
+
+.containers {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.button-primary {
+  padding: 18px 42px 17px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 35px;
+  --tw-text-opacity: 1;
+  color: rgb(0 105 255 / var(--tw-text-opacity));
+  font-size: 18px;
+}
+
+.header .header-logo {
+  width: 69px;
+  height: 65px;
+}
+
+.header ul li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.header ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header ul li:last-child {
+  padding-left: 30px;
+  border-left: 1px solid #e6efff;
+}
+
+.header ul li button {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 12px 59px 12px 26px;
+}
+
+.header ul li button .button-icon {
+  padding: 13px 14px;
+  border-radius: 0px 30px 30px 30px;
+}
+
+.header ul li button img {
+  width: 18px;
+  height: 21px;
 }
 
 @media (min-width: 640px) {
