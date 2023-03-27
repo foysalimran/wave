@@ -7,7 +7,7 @@
 }
 
 .button-primary {
-  padding: 18px 42px 17px;
+  padding: 18px 79px 18px 29px;
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 35px;
@@ -16,9 +16,22 @@
 }
 .button-primary .button-icon {
   @apply absolute top-0 right-0 bg-primary;
-  padding: 18px 19px;
+  padding: 20px;
   border-radius: 0px 30px 30px 30px;
 }
+.button-primary .button-icon img {
+    width: 23px;
+    height: 23px;
+}
+
+.button-secondary {
+    padding: 18px 40px;
+    background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
+      no-repeat padding-box;
+    border-radius: 35px;
+    @apply text-primary;
+    font-size: 18px;
+  }
 
 .header .header-logo {
   width: 69px;
@@ -42,7 +55,10 @@
   @apply text-base;
   padding: 12px 59px 12px 26px;
 }
-.header ul li button img {
+.header ul li .button-primary .button-icon {
+    padding: 13px 14px;
+  }
+.header ul li .button-primary img {
   width: 18px;
   height: 21px;
 }
