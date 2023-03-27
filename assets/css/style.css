@@ -21,6 +21,10 @@
 }
 .header ul li {
   @apply text-base;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header ul li:not(:last-child) {
   margin-right: 30px;
@@ -34,10 +38,71 @@
   padding: 12px 59px 12px 26px;
 }
 .header ul li button .button-icon {
-    padding: 13px 14px;
-    border-radius: 0px 30px 30px 30px;
+  padding: 13px 14px;
+  border-radius: 0px 30px 30px 30px;
 }
 .header ul li button img {
-    width: 18px;
-    height: 21px;
+  width: 18px;
+  height: 21px;
+}
+
+.menu-toggle {
+  @apply w-8 h-5 flex flex-col cursor-pointer justify-between mt-5;
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 300ms ease;
+}
+.menu-toggle span {
+  @apply h-1 w-3 bg-dark;
+  transition: width 200ms ease;
+}
+.menu-toggle span:nth-child(1) {
+  width: 80%;
+  transition-delay: 200ms;
+}
+.menu-toggle span:nth-child(2) {
+  width: 100%;
+}
+.menu-toggle span:nth-child(3) {
+  width: 60%;
+  transition-delay: 400ms;
+}
+.menu-toggle span:nth-child(4) {
+  position: absolute;
+  @apply left-1/2 block w-1 h-0;
+  top: -6px;
+  transform: translateX(-50%);
+  transition: height 400ms;
+}
+.menu-active {
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition-delay: 400ms;
+}
+.menu-toggle.menu-active span:nth-child(1) {
+  width: 0;
+  transition: 200ms ease;
+}
+.menu-toggle.menu-active span:nth-child(3) {
+  width: 0;
+  transition: 200ms ease;
+  transition-delay: 150ms;
+}
+.menu-toggle.menu-active span:nth-child(4) {
+  @apply h-8;
+  transition: height 200ms ease;
+  transition-delay: 200ms;
+}
+
+.header .main-menu.menu-show {
+  @apply absolute flex flex-col w-full items-start bg-white px-4;
+  top: 118%;
+  transition: 200ms ease;
+}
+.header .main-menu.menu-show li {
+    margin: 0 !important;
+    border: none;
+    @apply p-3 w-full block;
+}
+.header .main-menu.menu-show li:not(:last-child) {
+    border-bottom: 1px solid #e6efff;
 }
