@@ -657,16 +657,16 @@ video {
   isolation: auto;
 }
 
-.col-span-10 {
-  grid-column: span 10 / span 10;
-}
-
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-8 {
+  grid-column: span 8 / span 8;
 }
 
 .float-right {
@@ -697,11 +697,8 @@ video {
   clear: none;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-14 {
+.my-14 {
+  margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
 
@@ -715,6 +712,10 @@ video {
 
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-2 {
@@ -1834,12 +1835,16 @@ video {
      object-fit: scale-down;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-10 {
@@ -1915,11 +1920,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -2429,13 +2429,34 @@ body {
 /*PAGE TITLE*/
 
 .page-title {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .page-title h1 {
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 640px) {
+  .page-title h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-title h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 /*HEADER CSS*/
@@ -2608,18 +2629,24 @@ body {
 
 .companies .category {
   font-size: 14px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .companies .category {
+    margin-bottom: 1.25rem;
+  }
 }
 
 .companies .category span {
   padding: 2px 10px;
   border-radius: 5px;
+  margin-left: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 105 255 / var(--tw-bg-opacity));
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  margin-right: 10px;
 }
 
 /* single company page  */
@@ -2716,12 +2743,37 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:p-7 {
+    padding: 1.75rem;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2732,6 +2784,11 @@ body {
 
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2750,5 +2807,25 @@ body {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+}
+
+@media (max-width: 448px) {
+  .xs\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .xs\:block {
+    display: block;
   }
 }

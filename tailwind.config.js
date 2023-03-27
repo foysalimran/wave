@@ -19,6 +19,9 @@ module.exports = {
         "ffffff00": "#FFFFFF00",
         "tree-poppy": "#F7931E",
       },
+      screens: {
+        'xs': {'max': '448px'},
+      },
     },
   },
   plugins: [require("tailwindcss"), require("autoprefixer")],
