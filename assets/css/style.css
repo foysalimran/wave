@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .test {
-    @apply text-3xl font-bold
+  @apply text-3xl font-bold;
+}
+
+.footer p {
+  font-size: 14px;
 }

@@ -785,6 +785,14 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2222,6 +2230,10 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+}
+
+.footer p {
+  font-size: 14px;
 }
 
 @media (min-width: 640px) {
