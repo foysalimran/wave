@@ -12,26 +12,45 @@
   <body>
     <div class="header pt-4">
       <div class="containers">
-        <div class="flex justify-between">
+        <div class="flex justify-between relative">
           <div class="header-logo">
             <img src="assets/images/Union 5.svg" alt="header logo" />
           </div>
-          <ul class="flex items-center">
+          <div class="md:hidden block">
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="items-center main-menu md:flex hidden">
             <li><a href="#">Our Consultants</a></li>
             <li><a href="#">Our companies</a></li>
             <li>
               <button class="button-primary relative">
                 <span>Book a consultant</span>
-                <div class="absolute top-0 right-0 bg-primary button-icon">
+                <span class="button-icon">
                   <img src="assets/images/Path 14113.svg" alt="button svg" />
-                </div>
+                </span>
               </button>
             </li>
           </ul>
         </div>
       </div>
-      <h1 class="text-3xl font-bold">Hello world!</h1>
-      <p>Test description</p>
+      <div class="containers">
+        <h1 class="text-3xl font-bold pt-5">Hello world!</h1>
+        <p>Test description</p>
+      </div>
     </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainMenu = document.querySelector(".main-menu");
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("menu-active");
+        mainMenu.classList.toggle("menu-show");
+      });
+    </script>
   </body>
 </html>
