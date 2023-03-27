@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-dark-secondary;
+}
+p {
+  @apply text-light-gray1;
+}
+body {
+  @apply bg-secondary;
+}
 .containers {
   @apply container mx-auto px-4;
 }
@@ -20,19 +34,26 @@
   border-radius: 0px 30px 30px 30px;
 }
 .button-primary .button-icon img {
-    width: 23px;
-    height: 23px;
+  width: 23px;
+  height: 23px;
 }
 
 .button-secondary {
-    padding: 18px 40px;
-    background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
-      no-repeat padding-box;
-    border-radius: 35px;
-    @apply text-primary;
-    font-size: 18px;
-  }
-
+  padding: 18px 40px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 35px;
+  @apply text-primary;
+  font-size: 18px;
+}
+/*PAGE TITLE*/
+.page-title {
+    @apply py-20;
+}
+.page-title h1 {
+    @apply text-6xl;
+}
+/*HEADER CSS*/
 .header .header-logo {
   width: 69px;
   height: 65px;
@@ -43,6 +64,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.header ul a {
+  @apply text-dark-secondary;
 }
 .header ul li:not(:last-child) {
   margin-right: 30px;
@@ -56,8 +80,8 @@
   padding: 12px 59px 12px 26px;
 }
 .header ul li .button-primary .button-icon {
-    padding: 13px 14px;
-  }
+  padding: 13px 14px;
+}
 .header ul li .button-primary img {
   width: 18px;
   height: 21px;
@@ -124,6 +148,31 @@
   border-bottom: 1px solid #e6efff;
 }
 
+/*COMPANIES*/
+.companies .filter-item select {
+  @apply w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1;
+}
+.companies .filter-item p {
+  @apply pb-4 text-sm;
+}
+.companies .filter-item select:focus {
+  outline: none;
+}
+.companies .filter-item input {
+  @apply w-full;
+}
+.companies .category {
+  font-size: 14px;
+  @apply mb-5;
+}
+.companies .category span {
+  padding: 2px 10px;
+  border-radius: 5px;
+  @apply bg-primary text-white font-bold;
+  margin-right: 10px;
+}
+
+
 /* single company page  */
 .single-company-banner {
   width: 100%;
@@ -141,8 +190,10 @@
 }
 /* footer section  */
 .footer {
-  @apply border-t border-solid border-light-gray2 pt-4 pb-3;
+  @apply border-t-2 border-solid pt-4 pb-3;
+  margin-top: 75px;
 }
 .footer p {
   font-size: 14px;
+  @apply text-dark-secondary;
 }
