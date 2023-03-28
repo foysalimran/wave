@@ -169,19 +169,20 @@ body {
 .social {
   @apply flex gap-3 mb-3 sm:mb-0;
 }
-.social li {
-  @apply leading-none;
-}
-.social li a {
+
+.social li a,
+.single-icon a {
   background-color: #e6efff;
   transition: all 0.5s;
-  @apply rounded w-6 h-6 p-1 text-primary inline-block;
+  @apply rounded w-6 h-6 p-1 text-primary inline-block leading-none;
 }
-.social li a:hover {
+.social li a:hover,
+.single-icon a:hover {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
   transition: all 0.5s;
   @apply text-white;
 }
+
 .consultants-info {
   @apply xl:flex justify-between items-start;
 }
@@ -211,6 +212,15 @@ body {
   height: 71px;
 }
 
+.single-consultants .banner-logo {
+  padding: 5px;
+}
+
+.single-consultants .banner-logo img {
+  width: 150px;
+  height: 150px;
+}
+
 /* Overview section  */
 .overview-link .icon {
   padding: 22px;
@@ -233,6 +243,27 @@ body {
 .arrow-icon-position {
   right: -35px;
   bottom: 12%;
+}
+
+.single-company-swiper-nav.swiper-button-prev,
+.single-company-swiper-nav.swiper-button-next {
+  @apply w-9 h-9 p-2 bg-primary;
+}
+
+.single-company-swiper-nav.swiper-button-prev:after,
+.single-company-swiper-nav.swiper-button-next:after {
+  @apply text-xl text-white;
+}
+
+.single-company-swiper-nav.swiper-button-prev {
+  @apply rounded-tl-lg rounded-bl-lg right-0 left-auto top-auto;
+  bottom: 12%;
+}
+
+.single-company-swiper-nav.swiper-button-next {
+  @apply rounded-tr-lg rounded-br-lg top-auto left-auto;
+  bottom: 12%;
+  right: -36px;
 }
 
 /* footer section  */

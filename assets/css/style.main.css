@@ -1920,6 +1920,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -2818,11 +2822,8 @@ body {
   }
 }
 
-.social li {
-  line-height: 1;
-}
-
-.social li a {
+.social li a,
+.single-icon a {
   background-color: #e6efff;
   transition: all 0.5s;
   display: inline-block;
@@ -2830,11 +2831,13 @@ body {
   width: 1.5rem;
   border-radius: 0.25rem;
   padding: 0.25rem;
+  line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
 }
 
-.social li a:hover {
+.social li a:hover,
+.single-icon a:hover {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
   transition: all 0.5s;
   --tw-text-opacity: 1;
@@ -2899,6 +2902,15 @@ body {
   height: 71px;
 }
 
+.single-consultants .banner-logo {
+  padding: 5px;
+}
+
+.single-consultants .banner-logo img {
+  width: 150px;
+  height: 150px;
+}
+
 /* Overview section  */
 
 .overview-link .icon {
@@ -2925,6 +2937,41 @@ body {
 .arrow-icon-position {
   right: -35px;
   bottom: 12%;
+}
+
+.single-company-swiper-nav.swiper-button-prev,
+.single-company-swiper-nav.swiper-button-next {
+  height: 2.25rem;
+  width: 2.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 105 255 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.single-company-swiper-nav.swiper-button-prev:after,
+.single-company-swiper-nav.swiper-button-next:after {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.single-company-swiper-nav.swiper-button-prev {
+  right: 0px;
+  left: auto;
+  top: auto;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  bottom: 12%;
+}
+
+.single-company-swiper-nav.swiper-button-next {
+  top: auto;
+  left: auto;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  bottom: 12%;
+  right: -36px;
 }
 
 /* footer section  */
@@ -3185,10 +3232,6 @@ body {
 
   .xs\:block {
     display: block;
-  }
-
-  .xs\:justify-between {
-    justify-content: space-between;
   }
 
   .xs\:p-3 {
