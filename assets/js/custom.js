@@ -43,11 +43,44 @@
           prevEl: ".swiper-button-prev",
         },
       });
-    }; 
+  }; 
+  
+  PATH.PortfolioSlide = function () {
+    new Swiper(".portfolio-swiper", {
+      loop: true,
+      breakpoints: {
+        
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween:20
+        } 
+      },
+
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }; 
   
     /******************** DOCUMENT READY FUNCTION ********************/
     $(function () {
       PATH.TestimonialSlide();
+      PATH.PortfolioSlide()
     });
   
   
