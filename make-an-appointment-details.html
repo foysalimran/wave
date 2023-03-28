@@ -60,7 +60,7 @@
                 <h6 class="mt-8 text-xs sm:text-sm">SELECT A DATE & TIME</h6>
               </div>
               <div class="progress-content">
-                <div class="progress-item">
+                <div class="progress-item active">
                   <span>02</span>
                 </div>
                 <h6 class="mt-8 text-xs sm:text-sm">DETAILS</h6>
@@ -80,82 +80,38 @@
             </div>
             <div class="date">
               <div class="py-14">
-                <p class="text-xs text-primary mb-3">STEP ONE</p>
-                <h2 class="text-xl md:text-2xl lg:text-4xl capitalize">Select A Date & Time</h2>
+                <p class="text-xs text-primary mb-3">STEP TWO</p>
+                <h2 class="text-xl md:text-2xl lg:text-4xl capitalize">Personal Details</h2>
               </div>
-              <div class="flex justify-between items-center mb-10">
-                <i class="icofont-long-arrow-left text-2xl"></i>
-                <h3 class="text-xl md:text-2xl">March 2023</h3>
-                <i class="icofont-long-arrow-right text-2xl"></i>
+              <form class="flex flex-col">
+                <div class="md:flex gap-4">
+                  <label for="name">
+                    Name
+                    <input class="w-full" type="text" id="name">
+                  </label>
+                  <label for="email">
+                    Email
+                    <input type="email" id="email">
+                  </label>
+                </div>
+                <label for="title">
+                  Title
+                  <input type="text" id="title">
+                </label>
+                <label for="review">
+                  Review
+                  <textarea
+                    id="review"
+                    cols="30"
+                    rows="8"
+                    placeholder="Write your comments here"
+                  ></textarea>
+                </label>
+              </form>
+              <div class="flex items-center justify-between mt-5 md:mt-10 lg:mt-15">
+                <a href="#" class="button-secondary">Back</a>
+                <a href="#" class="button-secondary next">Next</a>
               </div>
-              <div class="calender">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>MON</th>
-                      <th>TUE</th>
-                      <th>WED</th>
-                      <th>THU</th>
-                      <th>FRI</th>
-                      <th>SAT</th>
-                      <th>SUN</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="available">28</td>
-                      <td class="available">1</td>
-                      <td class="available">2</td>
-                      <td class="available">3</td>
-                      <td class="available">4</td>
-                      <td class="available">5</td>
-                      <td class="available">6</td>
-                    </tr>
-                    <tr>
-                      <td class="available">7</td>
-                      <td class="available">8</td>
-                      <td class="available">9</td>
-                      <td class="available">10</td>
-                      <td class="available">11</td>
-                      <td class="available">12</td>
-                      <td class="available">13</td>
-                    </tr>
-                    <tr>
-                      <td>14</td>
-                      <td>15</td>
-                      <td>16</td>
-                      <td>17</td>
-                      <td>18</td>
-                      <td>19</td>
-                      <td>20</td>
-                    </tr>
-                    <tr>
-                      <td>21</td>
-                      <td>22</td>
-                      <td>23</td>
-                      <td class="available">24</td>
-                      <td class="available">25</td>
-                      <td class="available">26</td>
-                      <td class="available">27</td>
-                    </tr>
-                    <tr>
-                      <td>28</td>
-                      <td>29</td>
-                      <td>30</td>
-                      <td class="available">1</td>
-                      <td class="available">2</td>
-                      <td class="available">3</td>
-                      <td class="available">4</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="tags">
-              <ul>
-                <li class="available">Available</li>
-                <li>Not Available</li>
-              </ul>
             </div>
           </div>
         </div>

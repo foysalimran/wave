@@ -3281,6 +3281,39 @@ body {
   }
 }
 
+/*MAKE AN APPOINTMENT DETAILS*/
+
+.appointment form label {
+  width: 100%;
+}
+
+.appointment form label:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.appointment form label input, .appointment form label textarea {
+  margin-top: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.appointment form label input:focus, .appointment form label textarea:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.appointment .button-secondary.next {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background: #0069FF;
+}
+
 /* single company page  */
 
 .single-company-banner {

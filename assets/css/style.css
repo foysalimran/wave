@@ -302,7 +302,25 @@ body {
   background: transparent linear-gradient(91deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   @apply w-14 md:w-20 h-14 md:h-20 rounded-2xl flex items-center justify-center;
 }
+/*MAKE AN APPOINTMENT DETAILS*/
+.appointment form label {
+  @apply w-full;
+}
+.appointment form label:not(:last-child) {
+  @apply mb-5;
+}
+.appointment form label input, .appointment form label textarea {
+  @apply w-full border border-solid p-3 mt-3 rounded bg-secondary;
+}
+.appointment form label input:focus, .appointment form label textarea:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  @apply outline-none;
+}
 
+.appointment .button-secondary.next {
+  @apply text-white;
+  background: #0069FF;
+}
 /* single company page  */
 .single-company-banner {
   width: 100%;
