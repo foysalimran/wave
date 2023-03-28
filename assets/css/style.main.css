@@ -2650,12 +2650,6 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 640px) {
-  .button-secondary {
-    padding: 14px 30px;
-  }
-}
-
 /*PAGE TITLE*/
 
 .page-title {
@@ -2924,7 +2918,7 @@ body {
   }
 }
 
-.consultants-info button .button-primary {
+.consultants-info .button-primary {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2935,7 +2929,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .consultants-info button .button-primary {
+  .consultants-info .button-primary {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     padding-left: 1.25rem;
@@ -3651,16 +3645,16 @@ body {
     margin-bottom: 0px;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:mb-12 {
     margin-bottom: 3rem;
   }
 
   .md\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .md\:flex {

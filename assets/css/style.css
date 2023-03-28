@@ -45,11 +45,6 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 640px) {
-  .button-secondary {
-    padding: 14px 30px;
-  }
-}
 
 /*PAGE TITLE*/
 .page-title {
@@ -192,7 +187,7 @@ body {
 .consultants-info {
   @apply xl:flex justify-between items-start;
 }
-.consultants-info button .button-primary {
+.consultants-info .button-primary {
   @apply py-2 lg:py-3 px-3 lg:px-5 text-sm lg:text-base inline-block;
 }
 
