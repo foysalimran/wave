@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/assets/css/icofont.min.css" rel="stylesheet" />
+    <link href="/assets/css/typographt.css" rel="stylesheet" />
+    <link href="/assets/css/style.main.css" rel="stylesheet" />
+    <title>Wave</title>
+  </head>
+
+  <body>
+    <div class="header pt-4">
+      <div class="containers">
+        <div class="flex justify-between relative">
+          <div class="header-logo">
+            <a href="/"
+              ><img src="assets/images/Union 5.svg" alt="header logo"
+            /></a>
+          </div>
+          <div class="md:hidden block">
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="items-center main-menu md:flex hidden">
+            <li><a href="#">Our Consultants</a></li>
+            <li><a href="#">Our companies</a></li>
+            <li>
+              <button class="button-primary relative">
+                <span>Book a consultant</span>
+                <span class="button-icon">
+                  <img src="assets/images/Path 14113.svg" alt="button svg" />
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-title">
+      <div class="containers">
+        <h1>Make an appointment</h1>
+      </div>
+    </div>
+    <div class="appointment">
+      <div class="containers">
+        <div class="p-12 bg-white rounded-2xl">
+          <div class="flex"></div>
+        </div>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="footer">
+        <div class="flex justify-between items-center">
+          <a href="/"
+            ><img
+              class="w-11 h-10"
+              src="assets/images/footer-logo.svg"
+              alt="footer logo"
+          /></a>
+          <p>Copyright &#169; 2023. All Right Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainMenu = document.querySelector(".main-menu");
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("menu-active");
+        mainMenu.classList.toggle("menu-show");
+      });
+    </script>
+  </body>
+</html>
