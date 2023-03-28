@@ -265,6 +265,62 @@ body {
   bottom: 12%;
   right: -36px;
 }
+.other-skills ul {
+  @apply flex flex-wrap gap-3 mt-8;
+}
+
+.other-skills ul li {
+  @apply uppercase py-2 px-5 bg-primary rounded-lg text-white text-lg;
+}
+
+.portfolio {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+  @apply mt-28 mb-20 rounded-2xl py-20 px-8 relative;
+}
+
+.portfolio .portfolio-item {
+  @apply bg-white p-4 pb-5 rounded-2xl;
+}
+.portfolio .portfolio-item .portfolio-item-content {
+  position: relative;
+}
+.portfolio .portfolio-item .portfolio-item-content::before {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(0deg, #0069ff 0%, #7c3aed 100%);
+  opacity: 0.1;
+}
+
+.portfolio-nav.swiper-button-prev,
+.portfolio-nav.swiper-button-next {
+  @apply w-9 h-9 p-2 bg-white;
+}
+
+.portfolio-nav.swiper-button-prev:after,
+.portfolio-nav.swiper-button-next:after {
+  @apply text-xl text-primary;
+}
+
+.portfolio-nav.swiper-button-prev {
+  @apply rounded;
+  top: 17%;
+  right: 7%;
+  left: auto;
+}
+.portfolio-nav.swiper-button-next {
+  @apply rounded;
+  top: 17%;
+  right: 3%;
+  left: auto;
+}
+
+/* .portfolio .single-item img{
+    @apply bg-white p-4 rounded-2xl;
+} */
 
 /* footer section  */
 .footer {
