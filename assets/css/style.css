@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-dark-secondary;
+}
+p {
+  @apply text-light-gray1;
+}
+body {
+  @apply bg-secondary;
+}
 .containers {
   @apply container mx-auto px-4;
 }
@@ -15,13 +29,11 @@
   font-size: 18px;
 }
 .button-primary .button-icon {
-  @apply absolute top-0 right-0 bg-primary;
-  padding: 20px;
+  @apply absolute top-0 right-0 bg-primary p-5;
   border-radius: 0px 30px 30px 30px;
 }
 .button-primary .button-icon img {
-  width: 23px;
-  height: 23px;
+  @apply w-6 h-6;
 }
 
 .button-secondary {
@@ -33,16 +45,29 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 640px) {
+  .button-primary {
+    padding: 14px 30px;
+  }
+}
+
+/*PAGE TITLE*/
+.page-title {
+  @apply py-11 md:py-20;
+}
+.page-title h1 {
+  @apply text-3xl sm:text-5xl md:text-6xl;
+}
+/*HEADER CSS*/
 .header .header-logo {
   width: 69px;
   height: 65px;
 }
 .header ul li {
-  @apply text-base;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @apply text-base flex flex-col justify-center h-full;
+}
+.header ul a {
+  @apply text-dark-secondary;
 }
 .header ul li:not(:last-child) {
   margin-right: 30px;
@@ -124,6 +149,52 @@
   border-bottom: 1px solid #e6efff;
 }
 
+/*COMPANIES*/
+.companies .filter-item select {
+  @apply w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1;
+}
+.companies .filter-item p {
+  @apply pb-4 text-sm;
+}
+.companies .filter-item select:focus {
+  outline: none;
+}
+.companies .filter-item input {
+  @apply w-full;
+}
+.companies .category {
+  font-size: 14px;
+  @apply mb-3 sm:mb-5;
+}
+.companies .category span {
+  padding: 2px 10px;
+  border-radius: 5px;
+  @apply bg-primary text-white font-bold ml-2;
+}
+
+.social {
+  @apply flex gap-3 mb-3 sm:mb-0;
+}
+.social li {
+  @apply leading-none;
+}
+.social li a {
+  background-color: #e6efff;
+  transition: all 0.5s;
+  @apply rounded w-6 h-6 p-1 text-primary inline-block;
+}
+.social li a:hover {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+  transition: all 0.5s;
+  @apply text-white;
+}
+.consultants-info {
+  @apply xl:flex justify-between items-start;
+}
+.consultants-info button .button-primary {
+  @apply py-2 lg:py-3 px-4 lg:px-5 text-sm lg:text-base inline-block;
+}
+
 /* single company page  */
 .single-company-banner {
   width: 100%;
@@ -170,8 +241,10 @@
 
 /* footer section  */
 .footer {
-  @apply border-t border-solid border-light-gray2 pt-4 pb-3;
+  @apply border-t-2 border-solid pt-4 pb-3;
+  margin-top: 75px;
 }
 .footer p {
   font-size: 14px;
+  @apply text-dark-secondary;
 }
