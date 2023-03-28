@@ -22,6 +22,9 @@ module.exports = {
       screens: {
         'xs': {'max': '448px'},
       },
+      padding: {
+        '3.5': '14px',
+      },
     },
   },
   plugins: [require("tailwindcss"), require("autoprefixer")],
