@@ -702,6 +702,14 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -720,6 +728,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -1322,6 +1334,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1611,6 +1627,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -1852,6 +1872,16 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1922,9 +1952,9 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2006,6 +2036,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 105 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2407,13 +2442,13 @@ body {
   right: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 105 255 / var(--tw-bg-opacity));
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 0px 30px 30px 30px;
 }
 
 .button-primary .button-icon img {
-  width: 23px;
-  height: 23px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .button-secondary {
@@ -2424,6 +2459,12 @@ body {
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
   font-size: 18px;
+}
+
+@media screen and (max-width: 640px) {
+  .button-primary {
+    padding: 14px 30px;
+  }
 }
 
 /*PAGE TITLE*/
@@ -2467,12 +2508,12 @@ body {
 }
 
 .header ul li {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  height: 100%;
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .header ul a {
@@ -2649,6 +2690,73 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.social {
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .social {
+    margin-bottom: 0px;
+  }
+}
+
+.social li {
+  line-height: 1;
+}
+
+.social li a {
+  background-color: #e6efff;
+  transition: all 0.5s;
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 105 255 / var(--tw-text-opacity));
+}
+
+.social li a:hover {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+  transition: all 0.5s;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.consultants-info {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (min-width: 1280px) {
+  .consultants-info {
+    display: flex;
+  }
+}
+
+.consultants-info button .button-primary {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .consultants-info button .button-primary {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 /* single company page  */
 
 .single-company-banner {
@@ -2743,12 +2851,16 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:p-7 {
-    padding: 1.75rem;
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:p-5 {
     padding: 1.25rem;
+  }
+
+  .sm\:p-7 {
+    padding: 1.75rem;
   }
 
   .sm\:text-3xl {
@@ -2800,6 +2912,25 @@ body {
   .lg\:col-span-9 {
     grid-column: span 9 / span 9;
   }
+
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2827,5 +2958,13 @@ body {
 
   .xs\:block {
     display: block;
+  }
+
+  .xs\:p-4 {
+    padding: 1rem;
+  }
+
+  .xs\:p-3 {
+    padding: 0.75rem;
   }
 }
