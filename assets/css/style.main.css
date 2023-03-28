@@ -764,6 +764,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -1771,6 +1775,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -1941,10 +1949,6 @@ video {
   padding: 0.25rem;
 }
 
-.p-15 {
-  padding: 60px;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -1969,6 +1973,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-7 {
@@ -1999,6 +2008,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-9 {
@@ -2046,8 +2060,8 @@ video {
   padding-top: 6rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -2109,16 +2123,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -3250,6 +3254,35 @@ body {
   padding: 0.75rem;
 }
 
+.review .review-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .review .review-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.review .review-content .review-content-tag {
+  background: transparent linear-gradient(91deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .review .review-content .review-content-tag {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
 /* single company page  */
 
 .single-company-banner {
@@ -3352,17 +3385,17 @@ body {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1.25rem;
 }
 
 .other-skills ul li {
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 105 255 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: uppercase;
@@ -3450,10 +3483,6 @@ body {
   background: #e2edfc;
 }
 
-/* .portfolio .single-item img{
-    @apply bg-white p-4 rounded-2xl;
-} */
-
 /* footer section  */
 
 .footer {
@@ -3472,6 +3501,14 @@ body {
 
 @media screen and (max-width: 640px) {
   .button-primary {
+    padding: 14px 70px 14px 25px;
+  }
+
+  .button-primary .button-icon {
+    padding: 15px;
+  }
+
+  .button-secondary {
     padding: 14px 30px;
   }
 
@@ -3591,11 +3628,6 @@ body {
     line-height: 2.25rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -3627,6 +3659,10 @@ body {
     margin-top: 5rem;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -3643,10 +3679,6 @@ body {
     gap: 1.25rem;
   }
 
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -3655,12 +3687,26 @@ body {
     padding: 3.5rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:py-15 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .md\:pb-16 {
     padding-bottom: 4rem;
   }
 
   .md\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .md\:text-2xl {
@@ -3724,9 +3770,19 @@ body {
     padding: 60px;
   }
 
+  .lg\:px-15 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:py-3 {
