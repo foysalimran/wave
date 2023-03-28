@@ -21,6 +21,19 @@ module.exports = {
       },
       screens: {
         'xs': {'max': '448px'},
+        'xsmin': {'min': '449px'},
+      },
+      padding: {
+        '15': '60px',
+      },
+      margin: {
+        '15': '60px',
+      },
+      height: {
+        '15': '60px',
+      },
+      width: {
+        '15': '60px',
       },
     },
   },

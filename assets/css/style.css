@@ -29,13 +29,11 @@ body {
   font-size: 18px;
 }
 .button-primary .button-icon {
-  @apply absolute top-0 right-0 bg-primary;
-  padding: 20px;
+  @apply absolute top-0 right-0 bg-primary p-5;
   border-radius: 0px 30px 30px 30px;
 }
 .button-primary .button-icon img {
-  width: 23px;
-  height: 23px;
+  @apply w-6 h-6;
 }
 
 .button-secondary {
@@ -46,12 +44,14 @@ body {
   @apply text-primary;
   font-size: 18px;
 }
+
+
 /*PAGE TITLE*/
 .page-title {
-    @apply py-11 md:py-20;
+  @apply py-11 md:py-20;
 }
 .page-title h1 {
-    @apply text-3xl sm:text-5xl md:text-6xl;
+  @apply text-3xl sm:text-5xl md:text-6xl;
 }
 /*HEADER CSS*/
 .header .header-logo {
@@ -59,11 +59,7 @@ body {
   height: 65px;
 }
 .header ul li {
-  @apply text-base;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @apply text-base flex flex-col justify-center h-full;
 }
 .header ul a {
   @apply text-dark-secondary;
@@ -171,22 +167,282 @@ body {
   @apply bg-primary text-white font-bold ml-2;
 }
 
+.social {
+  @apply flex gap-3 mb-3 sm:mb-0;
+}
+
+.social li a,
+.single-icon a {
+  background-color: #e6efff;
+  transition: all 0.5s;
+  @apply rounded w-6 h-6 p-1 text-primary inline-block leading-none;
+}
+.social li a:hover,
+.single-icon a:hover {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+  transition: all 0.5s;
+  @apply text-white;
+}
+
+.consultants-info {
+  @apply xl:flex justify-between items-start;
+}
+.consultants-info .button-primary {
+  @apply py-2 lg:py-3 px-3 lg:px-5 text-sm lg:text-base inline-block;
+}
+
+/*MAKE AN APPOINTMENT*/
+.appointment .progress {
+  @apply flex  md:items-center justify-around relative flex-wrap xsmin:flex-nowrap;
+}
+.appointment .progress::after {
+  content: "";
+  top: 70px;
+  left: 18%;
+  width: 66%;
+  @apply absolute border border-dashed hidden sm:block;
+}
+.appointment .progress .progress-content {
+  @apply flex items-center flex-col z-10 w-1/2 sm:w-auto xs:mb-2;
+}
+.appointment .progress .progress-item {
+  @apply flex items-center w-16 md:w-20 lg:w-32 h-16 md:h-20 lg:h-32 rounded-full border border-solid border-gallery justify-center;
+}
+.appointment .progress .progress-item span {
+  letter-spacing: 1.08px;
+  @apply w-10 md:w-16 lg:w-24 h-10 md:h-16 lg:h-24 rounded-full flex items-center justify-center text-white text-lg md:text-2xl lg:text-4xl font-bold bg-gallery;
+}
+.appointment .progress .progress-item.active {
+  @apply border-primary bg-white;
+}
+.appointment .progress .progress-item.active span {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+}
+.appointment .tags {
+  margin-left: 20px;
+}
+
+.appointment table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.appointment th {
+  @apply font-bold text-dark-secondary bg-inherit  text-xs sm:text-base;
+}
+.appointment td {
+  @apply text-light-gray1 font-semibold text-xs sm:text-base;
+}
+.appointment th,
+.appointment td {
+  @apply text-center p-1 sm:p-4;
+}
+.appointment td {
+  @apply w-full rounded mb-1 sm:mb-3;
+  background-color: #f9e7e9;
+}
+.appointment td.available {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+.appointment tr {
+  @apply grid gap-1 sm:gap-3;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+  .appointment .progress::after {
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .appointment .calender {
+    overflow-x: scroll;
+  }
+  .appointment .calender table {
+    width: 334px;
+  }
+  .appointment .progress::after {
+    top: 30px;
+  }
+}
+
+.appointment .tags ul {
+  @apply xsmin:flex gap-10 mt-5;
+}
+.appointment .tags ul li {
+  @apply relative xs:mb-2;
+}
+.appointment .tags ul li.available::before {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+.appointment .tags ul li::before {
+  content: "";
+  background-color: #f9e7e9;
+  @apply absolute w-4 h-4 rounded-full top-1 -left-5;
+}
+
+/*REVIEW*/
+.review form label {
+  @apply w-full mb-5;
+}
+.review form label input, .review form label textarea {
+  @apply w-full border border-solid p-3 mt-3 rounded bg-secondary;
+}
+.review form label input:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  @apply outline-none;
+}
+.review form .image {
+  @apply w-72 border border-solid p-3 rounded bg-secondary;
+}
+.review .review-content {
+  @apply py-12 lg:py-20;
+}
+.review .review-content .review-content-tag {
+  background: transparent linear-gradient(91deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  @apply w-14 md:w-20 h-14 md:h-20 rounded-2xl flex items-center justify-center;
+}
 
 /* single company page  */
 .single-company-banner {
   width: 100%;
   height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
 }
 .banner-logo {
   padding: 45px;
-  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
   display: inline-block;
   border-radius: 10px;
+  position: absolute;
+  bottom: -50%;
+  left: 30px;
+  transform: translateY(-50%);
 }
 .banner-logo img {
   width: 71px;
   height: 71px;
 }
+
+.single-consultants .banner-logo {
+  padding: 5px;
+}
+
+.single-consultants .banner-logo img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Overview section  */
+.overview-link .icon {
+  padding: 22px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+  border-radius: 10px;
+}
+.stock-img {
+  position: relative;
+}
+.stock-img::before {
+  content: "";
+  height: 70%;
+  width: 75%;
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+  border-radius: 35px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+.arrow-icon-position {
+  right: -35px;
+  bottom: 12%;
+}
+
+.single-company-swiper-nav.swiper-button-prev,
+.single-company-swiper-nav.swiper-button-next {
+  @apply w-9 h-9 p-2 bg-primary;
+}
+
+.single-company-swiper-nav.swiper-button-prev:after,
+.single-company-swiper-nav.swiper-button-next:after {
+  @apply text-xl text-white;
+}
+
+.single-company-swiper-nav.swiper-button-prev {
+  @apply rounded-tl-lg rounded-bl-lg right-0 left-auto top-auto;
+  bottom: 12%;
+}
+
+.single-company-swiper-nav.swiper-button-next {
+  @apply rounded-tr-lg rounded-br-lg top-auto left-auto;
+  bottom: 12%;
+  right: -36px;
+}
+.other-skills ul {
+  @apply flex flex-wrap gap-5 mt-8;
+}
+
+.other-skills ul li {
+  @apply uppercase py-2 px-6 bg-primary rounded text-white text-lg;
+}
+
+.portfolio {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+  @apply mt-28 mb-20 rounded-2xl py-20 px-8 relative;
+}
+
+.portfolio .portfolio-item {
+  @apply bg-white p-4 pb-5 rounded-2xl;
+}
+.portfolio .portfolio-item .portfolio-item-content {
+  position: relative;
+}
+.portfolio .portfolio-item .portfolio-item-content::before {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(0deg, #0069ff 0%, #7c3aed 100%);
+  opacity: 0.1;
+}
+
+.portfolio-nav.swiper-button-prev,
+.portfolio-nav.swiper-button-next {
+  @apply w-9 h-9 p-2 bg-white;
+}
+
+.portfolio-nav.swiper-button-prev:after,
+.portfolio-nav.swiper-button-next:after {
+  @apply text-xl text-primary;
+}
+
+.portfolio-nav.swiper-button-prev {
+  @apply rounded;
+  top: 102px;
+  right: 80px;
+  left: auto;
+}
+.portfolio-nav.swiper-button-next {
+  @apply rounded;
+  top: 102px;
+  right: 32px;
+  left: auto;
+}
+
+.certification .overview-link .icon {
+  padding: 27px;
+  background: #fbfbfb;
+  border: 1px solid #7070701a;
+}
+.certification .overview-link {
+  border: 1px solid #7070701a;
+}
+.single-consultants .stock-img::before {
+  background: #e2edfc;
+}
+
 /* footer section  */
 .footer {
   @apply border-t-2 border-solid pt-4 pb-3;
@@ -195,4 +451,20 @@ body {
 .footer p {
   font-size: 14px;
   @apply text-dark-secondary;
+}
+
+@media screen and (max-width: 640px) {
+  .button-primary {
+    padding: 14px 70px 14px 25px;
+  }
+  .button-primary .button-icon {
+    padding: 15px;
+  }
+  .button-secondary {
+    padding: 14px 30px;
+  }
+  .banner-logo {
+    padding: 30px;
+    transform: translateY(-70%);
+  }
 }
