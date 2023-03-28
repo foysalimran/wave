@@ -521,6 +521,16 @@ video {
   width: 100%;
 }
 
+@media (min-width: 449px) {
+  .\!container {
+    max-width: 449px !important;
+  }
+
+  .container {
+    max-width: 449px;
+  }
+}
+
 @media (min-width: 640px) {
   .\!container {
     max-width: 640px !important;
@@ -904,11 +914,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1712,10 +1717,6 @@ video {
   border-bottom-right-radius: 0.25rem;
 }
 
-.rounded-br-lg {
-  border-bottom-right-radius: 0.5rem;
-}
-
 .rounded-tl {
   border-top-left-radius: 0.25rem;
 }
@@ -1730,10 +1731,6 @@ video {
 
 .rounded-tr-2xl {
   border-top-right-radius: 1rem;
-}
-
-.rounded-tr-lg {
-  border-top-right-radius: 0.5rem;
 }
 
 .border {
@@ -1924,10 +1921,6 @@ video {
   padding: 0.25rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -1957,6 +1950,11 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-2 {
@@ -2081,6 +2079,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -2515,6 +2518,12 @@ body {
   width: 100%;
 }
 
+@media (min-width: 449px) {
+  .containers {
+    max-width: 449px;
+  }
+}
+
 @media (min-width: 640px) {
   .containers {
     max-width: 640px;
@@ -2585,6 +2594,12 @@ body {
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
   font-size: 18px;
+}
+
+@media screen and (max-width: 640px) {
+  .button-secondary {
+    padding: 14px 30px;
+  }
 }
 
 /*PAGE TITLE*/
@@ -2859,8 +2874,8 @@ body {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -2874,6 +2889,292 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+/*MAKE AN APPOINTMENT*/
+
+.appointment .progress {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .appointment .progress {
+    align-items: center;
+  }
+}
+
+@media (min-width: 449px) {
+  .appointment .progress {
+    flex-wrap: nowrap;
+  }
+}
+
+.appointment .progress::after {
+  content: "";
+  top: 70px;
+  left: 18%;
+  width: 66%;
+  position: absolute;
+  display: none;
+  border-width: 1px;
+  border-style: dashed;
+}
+
+@media (min-width: 640px) {
+  .appointment .progress::after {
+    display: block;
+  }
+}
+
+.appointment .progress .progress-content {
+  z-index: 10;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .appointment .progress .progress-content {
+    width: auto;
+  }
+}
+
+@media (max-width: 448px) {
+  .appointment .progress .progress-content {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.appointment .progress .progress-item {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 239 239 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .appointment .progress .progress-item {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .appointment .progress .progress-item {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+.appointment .progress .progress-item span {
+  letter-spacing: 1.08px;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .appointment .progress .progress-item span {
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .appointment .progress .progress-item span {
+    height: 6rem;
+    width: 6rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.appointment .progress .progress-item.active {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 105 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.appointment .progress .progress-item.active span {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+}
+
+.appointment .tags {
+  margin-left: 20px;
+}
+
+/* .appointment .date ul li {
+  background-color: #f9e7e9;
+  @apply w-40 h-15 rounded flex items-center justify-center font-bold capitalize text-light-gray1;
+}
+.appointment .date ul li.available {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+.appointment .date ul li.title {
+  @apply font-bold text-dark-secondary bg-inherit;
+} */
+
+.appointment table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.appointment th {
+  background-color: inherit;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .appointment th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.appointment td {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .appointment td {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.appointment th,
+.appointment td {
+  padding: 0.25rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .appointment th,
+.appointment td {
+    padding: 1rem;
+  }
+}
+
+.appointment td {
+  margin-bottom: 0.25rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .appointment td {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.appointment td {
+  background-color: #f9e7e9;
+}
+
+.appointment td.available {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+
+.appointment tr {
+  display: grid;
+  gap: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .appointment tr {
+    gap: 0.75rem;
+  }
+}
+
+.appointment tr {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+  .appointment .progress::after {
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .appointment .calender {
+    overflow-x: scroll;
+  }
+
+  .appointment .calender table {
+    width: 334px;
+  }
+
+  .appointment .progress::after {
+    top: 30px;
+  }
+}
+
+.appointment .tags ul {
+  margin-top: 1.25rem;
+  gap: 2.5rem;
+}
+
+@media (min-width: 449px) {
+  .appointment .tags ul {
+    display: flex;
+  }
+}
+
+.appointment .tags ul li {
+  position: relative;
+}
+
+@media (max-width: 448px) {
+  .appointment .tags ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.appointment .tags ul li.available::before {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+
+.appointment .tags ul li::before {
+  content: "";
+  background-color: #f9e7e9;
+  position: absolute;
+  top: 0.25rem;
+  left: -1.25rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 9999px;
 }
 
 /* single company page  */
@@ -3006,6 +3307,12 @@ body {
     width: 100%;
   }
 
+  @media (min-width: 449px) {
+    .sm\:container {
+      max-width: 449px;
+    }
+  }
+
   @media (min-width: 640px) {
     .sm\:container {
       max-width: 640px;
@@ -3089,6 +3396,11 @@ body {
     line-height: 2.25rem;
   }
 
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3127,12 +3439,21 @@ body {
     gap: 1.25rem;
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
   .md\:p-14 {
     padding: 3.5rem;
   }
 
   .md\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-3xl {
@@ -3183,6 +3504,10 @@ body {
     gap: 3rem;
   }
 
+  .lg\:p-15 {
+    padding: 60px;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -3199,6 +3524,11 @@ body {
 
   .lg\:pl-14 {
     padding-left: 3.5rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-base {
