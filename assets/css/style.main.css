@@ -764,6 +764,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -1771,6 +1775,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -1967,6 +1975,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1995,6 +2008,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-9 {
@@ -2042,8 +2060,8 @@ video {
   padding-top: 6rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -2105,16 +2123,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -2642,12 +2650,6 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 640px) {
-  .button-secondary {
-    padding: 14px 30px;
-  }
-}
-
 /*PAGE TITLE*/
 
 .page-title {
@@ -2916,7 +2918,7 @@ body {
   }
 }
 
-.consultants-info button .button-primary {
+.consultants-info .button-primary {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2927,7 +2929,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .consultants-info button .button-primary {
+  .consultants-info .button-primary {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     padding-left: 1.25rem;
@@ -3072,17 +3074,6 @@ body {
   margin-left: 20px;
 }
 
-/* .appointment .date ul li {
-  background-color: #f9e7e9;
-  @apply w-40 h-15 rounded flex items-center justify-center font-bold capitalize text-light-gray1;
-}
-.appointment .date ul li.available {
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
-}
-.appointment .date ul li.title {
-  @apply font-bold text-dark-secondary bg-inherit;
-} */
-
 .appointment table {
   border-collapse: collapse;
   width: 100%;
@@ -3223,6 +3214,69 @@ body {
   border-radius: 9999px;
 }
 
+/*REVIEW*/
+
+.review form label {
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.review form label input, .review form label textarea {
+  margin-top: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.review form label input:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.review form .image {
+  width: 18rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.review .review-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .review .review-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.review .review-content .review-content-tag {
+  background: transparent linear-gradient(91deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .review .review-content .review-content-tag {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
 /* single company page  */
 
 .single-company-banner {
@@ -3325,17 +3379,17 @@ body {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1.25rem;
 }
 
 .other-skills ul li {
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 105 255 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: uppercase;
@@ -3423,10 +3477,6 @@ body {
   background: #e2edfc;
 }
 
-/* .portfolio .single-item img{
-    @apply bg-white p-4 rounded-2xl;
-} */
-
 /* footer section  */
 
 .footer {
@@ -3445,6 +3495,14 @@ body {
 
 @media screen and (max-width: 640px) {
   .button-primary {
+    padding: 14px 70px 14px 25px;
+  }
+
+  .button-primary .button-icon {
+    padding: 15px;
+  }
+
+  .button-secondary {
     padding: 14px 30px;
   }
 
@@ -3564,11 +3622,6 @@ body {
     line-height: 2.25rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -3590,6 +3643,10 @@ body {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:mb-12 {
@@ -3624,12 +3681,26 @@ body {
     padding: 3.5rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:py-15 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .md\:pb-16 {
     padding-bottom: 4rem;
   }
 
   .md\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .md\:text-2xl {
@@ -3693,9 +3764,19 @@ body {
     padding: 60px;
   }
 
+  .lg\:px-15 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:py-3 {
@@ -3714,6 +3795,11 @@ body {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-base {
