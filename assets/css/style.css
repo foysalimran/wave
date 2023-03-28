@@ -131,7 +131,7 @@
 }
 .banner-logo {
   padding: 45px;
-  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
   display: inline-block;
   border-radius: 10px;
   position: absolute;
@@ -143,6 +143,31 @@
   width: 71px;
   height: 71px;
 }
+
+/* Overview section  */
+.overview-link .icon {
+  padding: 22px;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+  border-radius: 10px;
+}
+.stock-img {
+  position: relative;
+}
+.stock-img::before {
+  content: "";
+  height: 275px;
+  width: 330px;
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+  border-radius: 35px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+.arrow-icon-position {
+  right: -35px;
+  bottom: 12%;
+}
+
 /* footer section  */
 .footer {
   @apply border-t border-solid border-light-gray2 pt-4 pb-3;
