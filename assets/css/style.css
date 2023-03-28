@@ -46,7 +46,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  .button-primary {
+  .button-secondary {
     padding: 14px 30px;
   }
 }
@@ -193,6 +193,106 @@ body {
 }
 .consultants-info button .button-primary {
   @apply py-2 lg:py-3 px-4 lg:px-5 text-sm lg:text-base inline-block;
+}
+
+/*MAKE AN APPOINTMENT*/
+.appointment .progress {
+  @apply flex  md:items-center justify-around relative flex-wrap xsmin:flex-nowrap;
+}
+.appointment .progress::after {
+  content: "";
+  top: 70px;
+  left: 18%;
+  width: 66%;
+  @apply absolute border border-dashed hidden sm:block;
+}
+.appointment .progress .progress-content {
+  @apply flex items-center flex-col z-10 w-1/2 sm:w-auto xs:mb-2;
+}
+.appointment .progress .progress-item {
+  @apply flex items-center w-16 md:w-20 lg:w-32 h-16 md:h-20 lg:h-32 rounded-full border border-solid border-gallery justify-center;
+}
+.appointment .progress .progress-item span {
+  letter-spacing: 1.08px;
+  @apply w-10 md:w-16 lg:w-24 h-10 md:h-16 lg:h-24 rounded-full flex items-center justify-center text-white text-lg md:text-2xl lg:text-4xl font-bold bg-gallery;
+}
+.appointment .progress .progress-item.active {
+  @apply border-primary bg-white;
+}
+.appointment .progress .progress-item.active span {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
+}
+.appointment .tags {
+  margin-left: 20px;
+}
+/* .appointment .date ul li {
+  background-color: #f9e7e9;
+  @apply w-40 h-15 rounded flex items-center justify-center font-bold capitalize text-light-gray1;
+}
+.appointment .date ul li.available {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+.appointment .date ul li.title {
+  @apply font-bold text-dark-secondary bg-inherit;
+} */
+
+.appointment table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.appointment th {
+  @apply font-bold text-dark-secondary bg-inherit  text-xs sm:text-base;
+}
+.appointment td {
+  @apply text-light-gray1 font-semibold text-xs sm:text-base;
+}
+.appointment th,
+.appointment td {
+  @apply text-center p-1 sm:p-4;
+}
+.appointment td {
+  @apply w-full rounded mb-1 sm:mb-3;
+  background-color: #f9e7e9;
+}
+.appointment td.available {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+.appointment tr {
+  @apply grid gap-1 sm:gap-3;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+  .appointment .progress::after {
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .appointment .calender {
+   overflow-x: scroll;
+  }
+  .appointment .calender table {
+    width: 334px;
+  }
+  .appointment .progress::after {
+    top: 30px;
+  }
+}
+
+.appointment .tags ul {
+  @apply xsmin:flex gap-10 mt-5;
+}
+.appointment .tags ul li {
+  @apply relative xs:mb-2;
+}
+.appointment .tags ul li.available::before {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+}
+.appointment .tags ul li::before {
+  content: "";
+  background-color: #f9e7e9;
+  @apply absolute w-4 h-4 rounded-full top-1 -left-5;
 }
 
 /* single company page  */
