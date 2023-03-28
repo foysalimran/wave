@@ -1921,6 +1921,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-15 {
+  padding: 60px;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -3026,17 +3030,6 @@ body {
   margin-left: 20px;
 }
 
-/* .appointment .date ul li {
-  background-color: #f9e7e9;
-  @apply w-40 h-15 rounded flex items-center justify-center font-bold capitalize text-light-gray1;
-}
-.appointment .date ul li.available {
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
-}
-.appointment .date ul li.title {
-  @apply font-bold text-dark-secondary bg-inherit;
-} */
-
 .appointment table {
   border-collapse: collapse;
   width: 100%;
@@ -3175,6 +3168,40 @@ body {
   height: 1rem;
   width: 1rem;
   border-radius: 9999px;
+}
+
+/*REVIEW*/
+
+.review form label {
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.review form label input, .review form label textarea {
+  margin-top: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.review form label input:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.review form .image {
+  width: 18rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
 }
 
 /* single company page  */
@@ -3439,6 +3466,10 @@ body {
     gap: 1.25rem;
   }
 
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -3529,6 +3560,11 @@ body {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-base {

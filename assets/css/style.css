@@ -226,16 +226,6 @@ body {
 .appointment .tags {
   margin-left: 20px;
 }
-/* .appointment .date ul li {
-  background-color: #f9e7e9;
-  @apply w-40 h-15 rounded flex items-center justify-center font-bold capitalize text-light-gray1;
-}
-.appointment .date ul li.available {
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
-}
-.appointment .date ul li.title {
-  @apply font-bold text-dark-secondary bg-inherit;
-} */
 
 .appointment table {
   border-collapse: collapse;
@@ -294,6 +284,21 @@ body {
   content: "";
   background-color: #f9e7e9;
   @apply absolute w-4 h-4 rounded-full top-1 -left-5;
+}
+
+/*REVIEW*/
+.review form label {
+  @apply w-full mb-5;
+}
+.review form label input, .review form label textarea {
+  @apply w-full border border-solid p-3 mt-3 rounded bg-secondary;
+}
+.review form label input:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  @apply outline-none;
+}
+.review form .image {
+  @apply w-72 border border-solid p-3 rounded bg-secondary;
 }
 
 /* single company page  */

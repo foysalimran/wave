@@ -48,7 +48,49 @@
         <h1>Review</h1>
       </div>
     </div>
+    <div class="review">
+      <div class="containers">
+        <div class="p-5 md:p-10 lg:p-15 rounded-2xl bg-white">
+          <div class="flex items-center mb-10 gap-3">
+            <i class="icofont-long-arrow-left text-2xl lg:text-5xl"></i>
+            <h3 class="text-xl md:text-2xl lg:text-4xl">Write A Review</h3>
+          </div>
 
+          <form class="flex flex-col">
+            <div class="md:flex gap-4">
+              <label for="name">
+                Name
+                <input class="w-full" type="text" id="name" />
+              </label>
+              <label for="email">
+                Email
+                <input type="email" id="email" />
+              </label>
+            </div>
+            <label for="title">
+              Title
+              <input type="text" id="title" />
+            </label>
+            <label for="revieo">
+              Review
+              <textarea
+                id="review"
+                cols="30"
+                rows="8"
+                placeholder="Write your comments here"
+              ></textarea>
+            </label>
+            <label for="image">Picture/Video (Optional)</label>
+            <input
+              class="image"
+              type="file"
+              id="image"
+              placeholder="Upload Now"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="containers">
       <div class="footer">
         <div class="flex justify-between items-center">
