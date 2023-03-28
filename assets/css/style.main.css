@@ -768,6 +768,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -878,6 +882,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
 }
 
 .h-9 {
@@ -1964,6 +1972,11 @@ video {
   padding-right: 1.75rem;
 }
 
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -1995,6 +2008,10 @@ video {
 
 .pb-14 {
   padding-bottom: 3.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pb-20 {
@@ -2093,6 +2110,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -3375,16 +3397,30 @@ body {
 
 .portfolio-nav.swiper-button-prev {
   border-radius: 0.25rem;
-  top: 17%;
-  right: 7%;
+  top: 102px;
+  right: 80px;
   left: auto;
 }
 
 .portfolio-nav.swiper-button-next {
   border-radius: 0.25rem;
-  top: 17%;
-  right: 3%;
+  top: 102px;
+  right: 32px;
   left: auto;
+}
+
+.certification .overview-link .icon {
+  padding: 27px;
+  background: #fbfbfb;
+  border: 1px solid #7070701a;
+}
+
+.certification .overview-link {
+  border: 1px solid #7070701a;
+}
+
+.single-consultants .stock-img::before {
+  background: #e2edfc;
 }
 
 /* .portfolio .single-item img{
@@ -3483,6 +3519,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -3491,8 +3531,16 @@ body {
     flex-direction: row;
   }
 
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:justify-self-auto {
+    justify-self: auto;
   }
 
   .sm\:p-10 {
@@ -3507,9 +3555,18 @@ body {
     padding: 1.75rem;
   }
 
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:text-sm {
@@ -3618,6 +3675,10 @@ body {
 
   .lg\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .lg\:gap-0 {
