@@ -1375,10 +1375,6 @@ video {
   gap: 2.5rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1391,8 +1387,8 @@ video {
   gap: 1.25rem;
 }
 
-.gap-9 {
-  gap: 2.25rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1924,10 +1920,6 @@ video {
      object-fit: scale-down;
 }
 
-.p-14 {
-  padding: 3.5rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1942,6 +1934,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .px-10 {
@@ -1977,6 +1973,10 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-20 {
@@ -2064,11 +2064,6 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -2077,6 +2072,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2583,12 +2583,6 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 640px) {
-  .button-primary {
-    padding: 14px 30px;
-  }
-}
-
 /*PAGE TITLE*/
 
 .page-title {
@@ -2884,6 +2878,9 @@ body {
 .single-company-banner {
   width: 100%;
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
 }
 
 .banner-logo {
@@ -2916,8 +2913,8 @@ body {
 
 .stock-img::before {
   content: "";
-  height: 275px;
-  width: 330px;
+  height: 70%;
+  width: 75%;
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
   border-radius: 35px;
   position: absolute;
@@ -2944,6 +2941,17 @@ body {
   font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+@media screen and (max-width: 640px) {
+  .button-primary {
+    padding: 14px 30px;
+  }
+
+  .banner-logo {
+    padding: 30px;
+    transform: translateY(-70%);
+  }
 }
 
 @media (min-width: 640px) {
@@ -3009,6 +3017,18 @@ body {
     display: flex;
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
   .sm\:p-5 {
     padding: 1.25rem;
   }
@@ -3056,6 +3076,23 @@ body {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .md\:p-14 {
+    padding: 3.5rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3073,6 +3110,10 @@ body {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mr-14 {
+    margin-right: 3.5rem;
   }
 
   .lg\:flex {
@@ -3103,6 +3144,14 @@ body {
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3.5rem;
   }
 
   .lg\:text-base {
@@ -3136,6 +3185,10 @@ body {
 
   .xs\:block {
     display: block;
+  }
+
+  .xs\:justify-between {
+    justify-content: space-between;
   }
 
   .xs\:p-3 {
