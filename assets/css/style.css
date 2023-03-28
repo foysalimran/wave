@@ -271,7 +271,7 @@ body {
 
 @media screen and (max-width: 448px) {
   .appointment .calender {
-   overflow-x: scroll;
+    overflow-x: scroll;
   }
   .appointment .calender table {
     width: 334px;
@@ -413,15 +413,27 @@ body {
 
 .portfolio-nav.swiper-button-prev {
   @apply rounded;
-  top: 17%;
-  right: 7%;
+  top: 102px;
+  right: 80px;
   left: auto;
 }
 .portfolio-nav.swiper-button-next {
   @apply rounded;
-  top: 17%;
-  right: 3%;
+  top: 102px;
+  right: 32px;
   left: auto;
+}
+
+.certification .overview-link .icon {
+  padding: 27px;
+  background: #fbfbfb;
+  border: 1px solid #7070701a;
+}
+.certification .overview-link {
+  border: 1px solid #7070701a;
+}
+.single-consultants .stock-img::before {
+  background: #e2edfc;
 }
 
 /* .portfolio .single-item img{
