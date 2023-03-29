@@ -193,40 +193,44 @@
       });
 
       const tr = document.querySelectorAll(".table-row");
-      let previousDiv = null;
+      const newItem = document.querySelector(".newDiv");
 
-      tr.forEach((availableDate) => {
-        const available = availableDate.querySelectorAll(".available");
+tr.forEach((availableDate, idx) => {
 
-        available.forEach((item) => {
-          item.addEventListener("click", function () {
-            const newDiv = document.createElement("div");
-            newDiv.classList.add("newDiv");
-            newDiv.innerHTML = `<div class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4">
-                      <div class="w-full">
-                        <p class="mb-2">Time In</p>
-                        <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
-                          <option value="time-in">Time In</option>
-                        </select>
-                      </div>
-                      <div class="w-full">
-                        <p class="mb-2">Time Out</p>
-                        <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
-                          <option value="time-out">Time Out</option>
-                        </select>
-                      </div>
-                    </div>`;
-                    console.log(previousDiv)
-            if (previousDiv && availableDate) {
-              availableDate?.removeChild(previousDiv);
-            }
-            const appended = availableDate.appendChild(newDiv);
-            if (appended === newDiv) {
-              previousDiv = newDiv;
-            }
-          });
-        });
-      });
+  let previousDiv = null; // Initialize previousDiv inside the loop
+console.log(idx)
+  const available = availableDate.querySelectorAll(".available");
+
+  available.forEach((item, idx) => {
+    item.addEventListener("click", function () {
+      const newDiv = document.createElement("div");
+      newDiv.classList.add("newDiv");
+      newDiv.innerHTML = `<div class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4">
+                <div class="w-full">
+                  <p class="mb-2">Time In</p>
+                  <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
+                    <option value="time-in">Time In</option>
+                  </select>
+                </div>
+                <div class="w-full">
+                  <p class="mb-2">Time Out</p>
+                  <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
+                    <option value="time-out">Time Out</option>
+                  </select>
+                </div>
+              </div>`;
+
+      if (previousDiv && previousDiv.parentNode === availableDate) { // check if previousDiv is a child of current availableDate
+        availableDate.removeChild(previousDiv);
+      }
+      const appended = availableDate.appendChild(newDiv);
+      if (appended === newDiv) {
+        previousDiv = newDiv;
+      }
+    });
+  });
+});
     </script>
   </body>
 </html>
+
