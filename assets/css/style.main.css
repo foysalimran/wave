@@ -2623,6 +2623,7 @@ body {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 35px;
+  display: inline-block;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
   font-size: 18px;
@@ -2647,6 +2648,7 @@ body {
   padding: 18px 40px;
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   border-radius: 35px;
+  display: inline-block;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
   font-size: 18px;
@@ -3086,12 +3088,12 @@ body {
 }
 
 .appointment .tags {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .appointment table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .appointment th {
@@ -3318,22 +3320,22 @@ body {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
 }
 
-/* single company page  */
+/* SINGLE COMPANY PAGE */
 
 .single-company-banner {
   width: 100%;
-  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 300px;
   border-radius: 30px;
 }
 
 .banner-logo {
-  padding: 45px;
-  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
-  display: inline-block;
-  border-radius: 10px;
   position: absolute;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 2.75rem;
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
   bottom: -50%;
   left: 30px;
   transform: translateY(-50%);
@@ -3353,7 +3355,7 @@ body {
   height: 150px;
 }
 
-/* Overview section  */
+/* OVERVIEW SECTION  */
 
 .overview-link .icon {
   padding: 22px;
@@ -3367,13 +3369,13 @@ body {
 
 .stock-img::before {
   content: "";
+  position: absolute;
+  top: -1.25rem;
+  left: -1.25rem;
   height: 70%;
   width: 75%;
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
   border-radius: 35px;
-  position: absolute;
-  top: -20px;
-  left: -20px;
 }
 
 .arrow-icon-position {
@@ -3418,10 +3420,10 @@ body {
 .single-company-swiper-nav.swiper-button-next {
   top: auto;
   left: auto;
+  right: -2.25rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   bottom: 12%;
-  right: -36px;
 }
 
 .other-skills ul {
@@ -3643,7 +3645,7 @@ body {
   background: transparent linear-gradient(90deg, #0069FF 0%, #7C3AED 100%)
 }
 
-/* footer section  */
+/* FOOTER SECTION  */
 
 .footer {
   margin-top: 3rem;
