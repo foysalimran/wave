@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <link href="assets/css/typographt.css" rel="stylesheet" />
+    <link href="assets/css/style.main.css" rel="stylesheet" />
+    <title>Wave</title>
+  </head>
+
+  <body>
+    <div class="header py-4">
+      <div class="containers">
+        <div class="flex justify-between relative">
+          <div class="header-logo">
+            <a href="index.html"
+              ><img src="assets/images/Union-5.svg" alt="header logo"
+            /></a>
+          </div>
+          <div class="md:hidden block">
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="items-center main-menu md:flex hidden">
+            <li><a href="our-consultants.html">Our Consultants</a></li>
+            <li><a href="index.html">Our companies</a></li>
+            <li>
+              <button class="button-primary relative">
+                <span>Book a consultant</span>
+                <span class="button-icon">
+                  <img src="assets/images/path-14113.svg" alt="button svg" />
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-title">
+      <div class="containers">
+        <h1>Make an appointment</h1>
+      </div>
+    </div>
+    <div class="appointment">
+      <div class="containers">
+        <div class="p-5 md:p-10 lg:p-15 bg-white rounded-2xl">
+          <div
+            class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid"
+          >
+            <div class="progress">
+              <div class="progress-content">
+                <div class="progress-item active">
+                  <span>01</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">SELECT A DATE & TIME</h6>
+              </div>
+              <div class="progress-content">
+                <div class="progress-item active">
+                  <span>02</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">DETAILS</h6>
+              </div>
+              <div class="progress-content">
+                <div class="progress-item active">
+                  <span>03</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">PAYMENT</h6>
+              </div>
+              <div class="progress-content">
+                <div class="progress-item">
+                  <span>04</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">CONFORMATION</h6>
+              </div>
+            </div>
+            <div class="date">
+              <div class="py-14">
+                <p class="text-xs text-primary mb-3">STEP THREE</p>
+                <h2 class="text-xl md:text-2xl lg:text-4xl capitalize">
+                  Payment Information
+                </h2>
+              </div>
+              <form class="flex flex-col">
+                <div class="md:flex gap-4">
+                  <label for="name">
+                    First Name
+                    <input class="w-full" type="text" id="name" />
+                  </label>
+                  <label for="last-name">
+                    Last Name
+                    <input type="text" id="last-name" />
+                  </label>
+                </div>
+                <div class="md:flex gap-4">
+                  <label for="number">
+                    Credit Card Number
+                    <input class="w-full" type="number" id="number" />
+                  </label>
+                  <label for="code">
+                    Security Code
+                    <input type="number" id="code" />
+                  </label>
+                </div>
+                <div class="md:flex gap-4">
+                  <label for="expiration">
+                    Card Expiration
+                    <input class="w-full" type="date" id="expiration" />
+                  </label>
+                  <label> </label>
+                </div>
+              </form>
+              <div
+                class="flex items-center justify-between mt-5 md:mt-10 lg:mt-15"
+              >
+                <a href="make-an-appointment-details.html" class="button-secondary"
+                  >Back</a
+                >
+                <a
+                  href="make-an-appointment-conformation.html"
+                  class="button-tartary"
+                  >Next</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="footer">
+        <div class="flex justify-between items-center">
+          <a href="index.html"
+            ><img
+              class="w-11 h-10"
+              src="assets/images/footer-logo.svg"
+              alt="footer logo"
+          /></a>
+          <p>Copyright &#169; 2023. All Right Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // const available = document.querySelectorAll(".available");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainMenu = document.querySelector(".main-menu");
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("menu-active");
+        mainMenu.classList.toggle("menu-show");
+      });
+
+      // available.forEach((availableDate) => {
+
+      // })
+    </script>
+  </body>
+</html>
