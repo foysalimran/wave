@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <link href="assets/css/typographt.css" rel="stylesheet" />
+    <link href="assets/css/style.main.css" rel="stylesheet" />
+    <title>Wave</title>
+  </head>
+
+  <body>
+    <div class="header py-4">
+      <div class="containers">
+        <div class="flex justify-between relative">
+          <div class="header-logo">
+            <a href="index.html"
+              ><img src="assets/images/Union-5.svg" alt="header logo"
+            /></a>
+          </div>
+          <div class="md:hidden block">
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="items-center main-menu md:flex hidden">
+            <li><a href="our-consultants.html">Our Consultants</a></li>
+            <li><a href="index.html">Our companies</a></li>
+            <li>
+              <button class="button-primary relative">
+                <span>Book a consultant</span>
+                <span class="button-icon">
+                  <img src="assets/images/Path-14113.svg" alt="button svg" />
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-title">
+      <div class="containers">
+        <h1>Make an appointment</h1>
+      </div>
+    </div>
+<div class="containers">
+    <div class="confirmation bg-white p-6 sm:p-10 md:p-15 rounded-2xl">
+        <div class="successfull-box">
+            <div class="overview-link mb-7 md:mb-10">
+                <div class="icon">
+                  <img class="w-9 h-9" src="assets/images/md-thumbs-up.svg" alt="">
+                </div>
+              </div>
+            <h2 class="text-lg md:text-2xl lg:text-3xl xl:text-4xl mb-5 md:mb-8 text-center">Your appointment request successfully sent!</h2>
+            <p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8 text-center">We have sent your booking information to your email address.</p>
+            <h3 class="text-xl sm:text-3xl md:text-4xl mb-1">09 - March - 2023</h3>
+            <p class="text-sm sm:text-lg text-dark-secondary mb-7 md:mb-10">09:15am - 10:15am</p>
+            <a class="button-tartary" href="#">Book To Consultants</a>
+          </div>
+    </div>
+</div>
+
+    <div class="containers">
+      <div class="footer">
+        <div class="flex justify-between items-center">
+          <a href="index.html"
+            ><img
+              class="w-11 h-10"
+              src="assets/images/footer-logo.svg"
+              alt="footer logo"
+          /></a>
+          <p>Copyright &#169; 2023. All Right Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainMenu = document.querySelector(".main-menu");
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("menu-active");
+        mainMenu.classList.toggle("menu-show");
+      });
+    </script>
+  </body>
+</html>
