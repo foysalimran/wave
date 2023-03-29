@@ -268,6 +268,11 @@ body {
   .appointment .progress::after {
     top: 30px;
   }
+  .successfull-box .button-tartary{
+    font-size: 12px;
+    padding: 10px 20px;
+
+  }
 }
 
 .appointment .tags ul {
@@ -449,10 +454,18 @@ body {
   background: #e2edfc;
 }
 
+.successfull-box{
+  @apply bg-secondary px-9 py-8 sm:px-16 sm:py-12 md:px-20 md:py-14 lg:px-24 lg:py-16 xl:px-28 xl:py-20 rounded-lg flex flex-col items-center;
+  border: 1px solid #7070701A;
+}
+
+.successfull-box .overview-link .icon {
+ background: transparent linear-gradient(90deg, #0069FF 0%, #7C3AED 100%)
+}
+
 /* footer section  */
 .footer {
-  @apply border-t-2 border-solid pt-4 pb-3;
-  margin-top: 75px;
+  @apply border-t-2 border-solid pt-4 pb-3 mt-12 md:mt-16;
 }
 .footer p {
   font-size: 14px;
@@ -475,5 +488,12 @@ body {
   .banner-logo {
     padding: 30px;
     transform: translateY(-70%);
+  }
+  .single-consultants .banner-logo img {
+    width: 120px;
+    height: 120px;
+  }
+  .successfull-box .button-tartary{
+    font-size: 16px;
   }
 }
