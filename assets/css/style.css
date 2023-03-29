@@ -38,13 +38,17 @@ body {
 
 .button-secondary {
   padding: 18px 40px;
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   border-radius: 35px;
   @apply text-primary;
   font-size: 18px;
 }
-
+.button-tartary {
+  padding: 18px 40px;
+  border-radius: 35px;
+  @apply text-white bg-primary;
+  font-size: 18px;
+}
 
 /*PAGE TITLE*/
 .page-title {
@@ -264,6 +268,11 @@ body {
   .appointment .progress::after {
     top: 30px;
   }
+  .successfull-box .button-tartary{
+    font-size: 12px;
+    padding: 10px 20px;
+
+  }
 }
 
 .appointment .tags ul {
@@ -301,6 +310,18 @@ body {
 .review .review-content .review-content-tag {
   background: transparent linear-gradient(91deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   @apply w-14 md:w-20 h-14 md:h-20 rounded-2xl flex items-center justify-center;
+}
+/*MAKE AN APPOINTMENT DETAILS*/
+.appointment form label {
+  @apply w-full mb-5 inline-block;
+}
+
+.appointment form label input, .appointment form label textarea {
+  @apply w-full border border-solid p-3 mt-3 rounded bg-secondary;
+}
+.appointment form label input:focus, .appointment form label textarea:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  @apply outline-none;
 }
 
 /* single company page  */
@@ -365,7 +386,7 @@ body {
 
 .single-company-swiper-nav.swiper-button-prev:after,
 .single-company-swiper-nav.swiper-button-next:after {
-  @apply text-xl text-white;
+  @apply text-base sm:text-xl text-white;
 }
 
 .single-company-swiper-nav.swiper-button-prev {
@@ -379,31 +400,27 @@ body {
   right: -36px;
 }
 .other-skills ul {
-  @apply flex flex-wrap md:gap-6 sm:gap-4 gap-3 mt-8;
+  @apply flex flex-wrap gap-3 lg:gap-5 mt-8;
 }
 
 .other-skills ul li {
-  @apply uppercase py-2 sm:px-6 px-4 bg-primary rounded text-white md:text-lg sm:text-base text-sm;
+  @apply uppercase py-2 px-4 lg:px-6 bg-primary rounded text-white text-base lg:text-lg;
 }
 
 .portfolio {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
-  @apply mt-16 md:mt-28  mb-14 md:mb-20 rounded-2xl py-20 px-8 relative;
+  @apply mt-10 md:mt-28 lg:mt-32 mb-10 md:mb-15 lg:mb-20 rounded-2xl pt-5 md:pt-10 lg:pt-15 pb-5 md:pb-15 lg:pb-20 px-4 md:px-8 relative;
 }
 
 .portfolio .portfolio-item {
   @apply bg-white p-4 pb-5 rounded-2xl;
 }
 .portfolio .portfolio-item .portfolio-item-content {
-  position: relative;
+  @apply relative;
 }
 .portfolio .portfolio-item .portfolio-item-content::before {
-  position: absolute;
-  width: 4px;
-  height: 100%;
+  @apply absolute w-1 top-0 left-0 h-full;
   content: "";
-  top: 0;
-  left: 0;
   background: transparent linear-gradient(0deg, #0069ff 0%, #7c3aed 100%);
   opacity: 0.1;
 }
@@ -415,20 +432,14 @@ body {
 
 .portfolio-nav.swiper-button-prev:after,
 .portfolio-nav.swiper-button-next:after {
-  @apply text-xl text-primary;
+  @apply text-xl text-primary font-bold;
 }
 
 .portfolio-nav.swiper-button-prev {
-  @apply rounded;
-  top: 102px;
-  right: 80px;
-  left: auto;
+  @apply rounded right-20 left-auto top-10  md:top-20 lg:top-28;
 }
 .portfolio-nav.swiper-button-next {
-  @apply rounded;
-  top: 102px;
-  right: 32px;
-  left: auto;
+  @apply rounded left-auto right-8 top-10 md:top-20 lg:top-28;
 }
 
 .certification .overview-link .icon {
@@ -444,7 +455,7 @@ body {
 }
 
 .successfull-box{
-  @apply bg-secondary px-28 py-20 rounded-lg flex flex-col items-center;
+  @apply bg-secondary px-9 py-8 sm:px-16 sm:py-12 md:px-20 md:py-14 lg:px-24 lg:py-16 xl:px-28 xl:py-20 rounded-lg flex flex-col items-center;
   border: 1px solid #7070701A;
 }
 
@@ -466,9 +477,12 @@ body {
     padding: 14px 70px 14px 25px;
   }
   .button-primary .button-icon {
-    padding: 15px;
+    @apply p-4;
   }
   .button-secondary {
+    padding: 14px 30px;
+  }
+  .button-tartary {
     padding: 14px 30px;
   }
   .banner-logo {
@@ -478,5 +492,8 @@ body {
   .single-consultants .banner-logo img {
     width: 120px;
     height: 120px;
+  }
+  .successfull-box .button-tartary{
+    font-size: 16px;
   }
 }

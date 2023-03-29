@@ -716,16 +716,16 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .mb-2 {
@@ -770,10 +770,6 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -1949,10 +1945,6 @@ video {
   padding: 0.25rem;
 }
 
-.p-15 {
-  padding: 60px;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -1963,6 +1955,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-7 {
@@ -1987,11 +1983,6 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-}
-
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
 }
 
 .py-14 {
@@ -2044,6 +2035,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2060,12 +2059,12 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-6 {
@@ -2133,9 +2132,9 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2239,6 +2238,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-dark-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
@@ -2247,11 +2251,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-dark-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2665,11 +2664,20 @@ body {
 
 .button-secondary {
   padding: 18px 40px;
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   border-radius: 35px;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
+  font-size: 18px;
+}
+
+.button-tartary {
+  padding: 18px 40px;
+  border-radius: 35px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 105 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   font-size: 18px;
 }
 
@@ -3199,6 +3207,11 @@ body {
   .appointment .progress::after {
     top: 30px;
   }
+
+  .successfull-box .button-tartary{
+    font-size: 14px;
+    padding: 12px 24px;
+  }
 }
 
 .appointment .tags ul {
@@ -3300,6 +3313,31 @@ body {
   }
 }
 
+/*MAKE AN APPOINTMENT DETAILS*/
+
+.appointment form label {
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.appointment form label input, .appointment form label textarea {
+  margin-top: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.appointment form label input:focus, .appointment form label textarea:focus {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 /* single company page  */
 
 .single-company-banner {
@@ -3374,10 +3412,18 @@ body {
 
 .single-company-swiper-nav.swiper-button-prev:after,
 .single-company-swiper-nav.swiper-button-next:after {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .single-company-swiper-nav.swiper-button-prev:after,
+.single-company-swiper-nav.swiper-button-next:after {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .single-company-swiper-nav.swiper-button-prev {
@@ -3405,15 +3451,9 @@ body {
   gap: 0.75rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .other-skills ul {
-    gap: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .other-skills ul {
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 }
 
@@ -3425,24 +3465,17 @@ body {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .other-skills ul li {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .other-skills ul li {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
@@ -3451,19 +3484,32 @@ body {
 .portfolio {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
   position: relative;
-  margin-top: 4rem;
-  margin-bottom: 3.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   border-radius: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .portfolio {
     margin-top: 7rem;
+    margin-bottom: 60px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    margin-top: 8rem;
     margin-bottom: 5rem;
+    padding-top: 60px;
+    padding-bottom: 5rem;
   }
 }
 
@@ -3481,11 +3527,11 @@ body {
 
 .portfolio .portfolio-item .portfolio-item-content::before {
   position: absolute;
-  width: 4px;
+  top: 0px;
+  left: 0px;
   height: 100%;
+  width: 0.25rem;
   content: "";
-  top: 0;
-  left: 0;
   background: transparent linear-gradient(0deg, #0069ff 0%, #7c3aed 100%);
   opacity: 0.1;
 }
@@ -3503,22 +3549,47 @@ body {
 .portfolio-nav.swiper-button-next:after {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
 }
 
 .portfolio-nav.swiper-button-prev {
-  border-radius: 0.25rem;
-  top: 102px;
-  right: 80px;
+  right: 5rem;
   left: auto;
+  top: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-nav.swiper-button-prev {
+    top: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-nav.swiper-button-prev {
+    top: 7rem;
+  }
 }
 
 .portfolio-nav.swiper-button-next {
-  border-radius: 0.25rem;
-  top: 102px;
-  right: 32px;
   left: auto;
+  right: 2rem;
+  top: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-nav.swiper-button-next {
+    top: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-nav.swiper-button-next {
+    top: 7rem;
+  }
 }
 
 .certification .overview-link .icon {
@@ -3542,10 +3613,49 @@ body {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
-  padding-left: 7rem;
-  padding-right: 7rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .successfull-box {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .successfull-box {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .successfull-box {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .successfull-box {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.successfull-box{
   border: 1px solid #7070701A;
 }
 
@@ -3581,10 +3691,14 @@ body {
   }
 
   .button-primary .button-icon {
-    padding: 15px;
+    padding: 1rem;
   }
 
   .button-secondary {
+    padding: 14px 30px;
+  }
+
+  .button-tartary {
     padding: 14px 30px;
   }
 
@@ -3596,6 +3710,10 @@ body {
   .single-consultants .banner-logo img {
     width: 120px;
     height: 120px;
+  }
+
+  .successfull-box .button-tartary{
+    font-size: 16px;
   }
 }
 
@@ -3700,6 +3818,16 @@ body {
     padding: 1.75rem;
   }
 
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .sm\:py-11 {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -3707,6 +3835,16 @@ body {
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-sm {
@@ -3740,8 +3878,12 @@ body {
     margin-bottom: 3rem;
   }
 
-  .md\:mb-20 {
-    margin-bottom: 5rem;
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:mt-20 {
@@ -3772,6 +3914,10 @@ body {
     padding: 3.5rem;
   }
 
+  .md\:p-15 {
+    padding: 60px;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3780,6 +3926,14 @@ body {
   .md\:py-15 {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .md\:pb-16 {
@@ -3794,8 +3948,8 @@ body {
     padding-top: 2.5rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
+  .md\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .md\:text-2xl {
@@ -3812,6 +3966,11 @@ body {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3827,8 +3986,16 @@ body {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-15 {
+    margin-bottom: 60px;
+  }
+
   .lg\:mr-14 {
     margin-right: 3.5rem;
+  }
+
+  .lg\:mt-15 {
+    margin-top: 60px;
   }
 
   .lg\:flex {
@@ -3887,6 +4054,11 @@ body {
     padding-left: 3.5rem;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3918,6 +4090,11 @@ body {
 
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
