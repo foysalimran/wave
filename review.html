@@ -5,9 +5,12 @@
     <link rel="icon" href="assets/images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/icofont.min.css" rel="stylesheet">
-    <link href="assets/css/typographt.css" rel="stylesheet">
-    <link href="assets/css/style.main.css" rel="stylesheet">
+       <!--====== Swiper css ======-->
+       <link rel="stylesheet" href="assets/css/swiper.min.css">
+       <!--====== Typography css ======-->
+       <link href="assets/css/typography.css" rel="stylesheet">
+        <!--====== Main css ======-->
+       <link href="assets/css/style.main.css" rel="stylesheet">
     <title>Wave</title>
   </head>
 
@@ -32,12 +35,12 @@
             <li><a href="our-consultants.html">Our Consultants</a></li>
             <li><a href="index.html">Our companies</a></li>
             <li>
-              <button class="button-primary relative">
+              <a href="make-an-appointment.html" class="button-primary relative">
                 <span>Book a consultant</span>
                 <span class="button-icon">
-                  <img src="assets/images/Path-14113.svg" alt="button svg">
+                  <img src="assets/images/path-14113.svg" alt="button svg">
                 </span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -53,7 +56,7 @@
         <div class="p-5 md:p-10 lg:p-15 rounded-2xl bg-white">
           <div class="flex items-center mb-10 gap-3">
             <i class="icofont-long-arrow-left text-2xl lg:text-5xl"></i>
-            <h3 class="text-xl md:text-2xl lg:text-4xl">Write A Review</h3>
+            <h3 class="text-lg md:text-2xl lg:text-3xl">Write A Review</h3>
           </div>
 
           <form class="flex flex-col">
@@ -90,14 +93,14 @@
               <button class="button-primary relative">
                 <span>Submit Now</span>
                 <span class="button-icon">
-                  <img src="assets/images/Path-14113.svg" alt="button svg">
+                  <img src="assets/images/path-14113.svg" alt="button svg">
                 </span>
               </button>
             </div>
           </form>
           <div class="review-content">
             <div class="mb-6 md:mb-10">
-              <h3 class="text-2xl sm:text-3xl md:text-4xl text-center">Reviews</h3>
+              <h3 class="text-lg sm:text-2xl lg:text-3xl text-center">Reviews</h3>
             </div>
             <div class="flex items-center gap-5 mb-8">
               <div class="review-content-tag">
@@ -158,13 +161,11 @@
       </div>
     </div>
 
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const mainMenu = document.querySelector(".main-menu");
-      menuToggle.addEventListener("click", function () {
-        menuToggle.classList.toggle("menu-active");
-        mainMenu.classList.toggle("menu-show");
-      });
-    </script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== custom js ======-->
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>

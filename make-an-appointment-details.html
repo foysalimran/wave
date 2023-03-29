@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--====== Swiper css ======-->
+      <link rel="stylesheet" href="assets/css/swiper.min.css">
+      <!--====== Typography css ======-->
+      <link href="assets/css/typography.css" rel="stylesheet">
+       <!--====== Main css ======-->
+      <link href="assets/css/style.main.css" rel="stylesheet">
+    <title>Wave</title>
+  </head>
+
+  <body>
+    <div class="header py-4">
+      <div class="containers">
+        <div class="flex justify-between relative">
+          <div class="header-logo">
+            <a href="index.html"
+              ><img src="assets/images/Union-5.svg" alt="header logo"
+           ></a>
+          </div>
+          <div class="md:hidden block">
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="items-center main-menu md:flex hidden">
+            <li><a href="our-consultants.html">Our Consultants</a></li>
+            <li><a href="index.html">Our companies</a></li>
+            <li>
+              <a href="make-an-appointment.html" class="button-primary relative">
+                <span>Book a consultant</span>
+                <span class="button-icon">
+                  <img src="assets/images/path-14113.svg" alt="button svg">
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-title">
+      <div class="containers">
+        <h1>Make an appointment</h1>
+      </div>
+    </div>
+    <div class="appointment">
+      <div class="containers">
+        <div class="p-5 md:p-10 lg:p-15 bg-white rounded-2xl">
+          <div class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid">
+            <div class="progress">
+              <div class="progress-content">
+                <div class="progress-item active">
+                  <span>01</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">SELECT A DATE & TIME</h6>
+              </div>
+              <div class="progress-content">
+                <div class="progress-item active">
+                  <span>02</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">DETAILS</h6>
+              </div>
+              <div class="progress-content">
+                <div class="progress-item">
+                  <span>03</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">PAYMENT</h6>
+              </div>
+              <div class="progress-content">
+                <div class="progress-item">
+                  <span>04</span>
+                </div>
+                <h6 class="mt-8 text-xs sm:text-sm">CONFORMATION</h6>
+              </div>
+            </div>
+            <div class="date">
+              <div class="py-14">
+                <p class="text-xs text-primary mb-3">STEP TWO</p>
+                <h2 class="text-lg md:text-2xl lg:text-3xl capitalize">Personal Details</h2>
+              </div>
+              <form class="flex flex-col">
+                <div class="md:flex gap-4">
+                  <label for="name">
+                    Name
+                    <input class="w-full" type="text" id="name">
+                  </label>
+                  <label for="phone">
+                    Phone
+                    <input type="number" id="phone">
+                  </label>
+                </div>
+                <label for="email">
+                  Email
+                  <input type="email" id="email">
+                </label>
+                <label for="review">
+                  Additional Comment
+                  <textarea
+                    id="review"
+                    cols="30"
+                    rows="8"
+                  ></textarea>
+                </label>
+              </form>
+              <div class="flex items-center justify-between mt-5 md:mt-10 lg:mt-15">
+                <a href="make-an-appointment.html" class="button-secondary">Back</a>
+                <a href="make-an-appointment-payment.html" class="button-tartary">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="footer">
+        <div class="flex justify-between items-center">
+          <a href="index.html"
+            ><img
+              class="w-11 h-10"
+              src="assets/images/footer-logo.svg"
+              alt="footer logo"
+         ></a>
+          <p>Copyright &#169; 2023. All Right Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--====== Swiper js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== custom js ======-->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
