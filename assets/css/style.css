@@ -379,16 +379,16 @@ body {
   right: -36px;
 }
 .other-skills ul {
-  @apply flex flex-wrap gap-5 mt-8;
+  @apply flex flex-wrap md:gap-6 sm:gap-4 gap-3 mt-8;
 }
 
 .other-skills ul li {
-  @apply uppercase py-2 px-6 bg-primary rounded text-white text-lg;
+  @apply uppercase py-2 sm:px-6 px-4 bg-primary rounded text-white md:text-lg sm:text-base text-sm;
 }
 
 .portfolio {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
-  @apply mt-28 mb-20 rounded-2xl py-20 px-8 relative;
+  @apply mt-16 md:mt-28  mb-14 md:mb-20 rounded-2xl py-20 px-8 relative;
 }
 
 .portfolio .portfolio-item {
@@ -445,8 +445,7 @@ body {
 
 /* footer section  */
 .footer {
-  @apply border-t-2 border-solid pt-4 pb-3;
-  margin-top: 75px;
+  @apply border-t-2 border-solid pt-4 pb-3 mt-12 md:mt-16;
 }
 .footer p {
   font-size: 14px;
@@ -466,5 +465,9 @@ body {
   .banner-logo {
     padding: 30px;
     transform: translateY(-70%);
+  }
+  .single-consultants .banner-logo img {
+    width: 120px;
+    height: 120px;
   }
 }
