@@ -716,6 +716,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -770,6 +774,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -884,12 +892,24 @@ video {
   height: 2.75rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
 
+.h-15 {
+  height: 60px;
+}
+
 .w-11 {
   width: 2.75rem;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-9 {
@@ -898,6 +918,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-15 {
+  width: 60px;
 }
 
 .flex-shrink {
@@ -1701,6 +1725,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -1771,6 +1799,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -1781,6 +1813,10 @@ video {
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
 }
 
 .border-solid {
@@ -1941,6 +1977,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1992,6 +2032,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2025,6 +2070,10 @@ video {
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-5 {
@@ -2129,6 +2178,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2223,6 +2277,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-light-gray1 {
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -2678,20 +2737,20 @@ body {
 }
 
 .page-title h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 640px) {
   .page-title h1 {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .page-title h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     line-height: 1;
   }
 }
@@ -3067,8 +3126,8 @@ body {
   .appointment .progress .progress-item span {
     height: 6rem;
     width: 6rem;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -3313,6 +3372,12 @@ body {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+/*CONFORMATION*/
+
+.conformation .conformation-icon {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
 }
 
 /* single company page  */
@@ -3678,6 +3743,11 @@ body {
   text-align: center;
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -3687,6 +3757,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3747,6 +3821,11 @@ body {
     line-height: 1.25rem;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3781,12 +3860,24 @@ body {
     margin-top: 5rem;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
+  }
+
+  .md\:w-20 {
+    width: 5rem;
   }
 
   .md\:grid-cols-12 {
@@ -3815,6 +3906,11 @@ body {
     padding-bottom: 60px;
   }
 
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
   .md\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -3829,6 +3925,10 @@ body {
 
   .md\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 
   .md\:pt-10 {
@@ -3860,6 +3960,10 @@ body {
     grid-column: span 3 / span 3;
   }
 
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:col-span-9 {
     grid-column: span 9 / span 9;
   }
@@ -3874,6 +3978,10 @@ body {
 
   .lg\:mr-14 {
     margin-right: 3.5rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:mt-15 {
@@ -3928,6 +4036,14 @@ body {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:pb-15 {
+    padding-bottom: 60px;
+  }
+
   .lg\:pl-12 {
     padding-left: 3rem;
   }
@@ -3936,9 +4052,9 @@ body {
     padding-left: 3.5rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-5xl {

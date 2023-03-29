@@ -55,7 +55,7 @@ body {
   @apply py-11 md:py-20;
 }
 .page-title h1 {
-  @apply text-3xl sm:text-5xl md:text-6xl;
+  @apply text-2xl sm:text-4xl md:text-5xl;
 }
 /*HEADER CSS*/
 .header .header-logo {
@@ -214,7 +214,7 @@ body {
 }
 .appointment .progress .progress-item span {
   letter-spacing: 1.08px;
-  @apply w-10 md:w-16 lg:w-24 h-10 md:h-16 lg:h-24 rounded-full flex items-center justify-center text-white text-lg md:text-2xl lg:text-4xl font-bold bg-gallery;
+  @apply w-10 md:w-16 lg:w-24 h-10 md:h-16 lg:h-24 rounded-full flex items-center justify-center text-white text-lg md:text-2xl lg:text-3xl font-bold bg-gallery;
 }
 .appointment .progress .progress-item.active {
   @apply border-primary bg-white;
@@ -318,7 +318,10 @@ body {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   @apply outline-none;
 }
-
+/*CONFORMATION*/
+.conformation .conformation-icon {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+}
 /* single company page  */
 .single-company-banner {
   width: 100%;
