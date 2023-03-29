@@ -443,6 +443,15 @@ body {
   background: #e2edfc;
 }
 
+.successfull-box{
+  @apply bg-secondary px-28 py-20 rounded-lg flex flex-col items-center;
+  border: 1px solid #7070701A;
+}
+
+.successfull-box .overview-link .icon {
+ background: transparent linear-gradient(90deg, #0069FF 0%, #7C3AED 100%)
+}
+
 /* footer section  */
 .footer {
   @apply border-t-2 border-solid pt-4 pb-3 mt-12 md:mt-16;

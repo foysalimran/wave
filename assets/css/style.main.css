@@ -1949,6 +1949,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-15 {
+  padding: 60px;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -2129,6 +2133,16 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2233,6 +2247,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-dark-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3514,6 +3533,24 @@ body {
 
 .single-consultants .stock-img::before {
   background: #e2edfc;
+}
+
+.successfull-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border: 1px solid #7070701A;
+}
+
+.successfull-box .overview-link .icon {
+  background: transparent linear-gradient(90deg, #0069FF 0%, #7C3AED 100%)
 }
 
 /* footer section  */
