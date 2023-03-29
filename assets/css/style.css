@@ -149,6 +149,9 @@ body {
 }
 
 /*COMPANIES*/
+.companies .companies-title {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+}
 .companies .filter-item select {
   @apply w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1;
 }
@@ -163,7 +166,7 @@ body {
 }
 .companies .category {
   font-size: 14px;
-  @apply mb-3 sm:mb-5;
+  @apply mb-2 sm:mb-4;
 }
 .companies .category span {
   padding: 2px 10px;
