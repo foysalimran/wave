@@ -216,8 +216,9 @@
                         </select>
                       </div>
                     </div>`;
-            if (previousDiv) {
-              availableDate.removeChild(previousDiv);
+                    console.log(previousDiv)
+            if (previousDiv && availableDate) {
+              availableDate?.removeChild(previousDiv);
             }
             const appended = availableDate.appendChild(newDiv);
             if (appended === newDiv) {
