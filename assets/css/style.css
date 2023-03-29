@@ -76,7 +76,7 @@ body {
   border-left: 1px solid #e6efff;
 }
 .header ul li .button-primary {
-  @apply text-base;
+  @apply text-base text-primary;
   padding: 12px 59px 12px 26px;
 }
 .header ul li .button-primary .button-icon {
