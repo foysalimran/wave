@@ -38,13 +38,17 @@ body {
 
 .button-secondary {
   padding: 18px 40px;
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   border-radius: 35px;
   @apply text-primary;
   font-size: 18px;
 }
-
+.button-tartary {
+  padding: 18px 40px;
+  border-radius: 35px;
+  @apply text-white bg-primary;
+  font-size: 18px;
+}
 
 /*PAGE TITLE*/
 .page-title {
@@ -304,11 +308,9 @@ body {
 }
 /*MAKE AN APPOINTMENT DETAILS*/
 .appointment form label {
-  @apply w-full;
+  @apply w-full mb-5 inline-block;
 }
-.appointment form label:not(:last-child) {
-  @apply mb-5;
-}
+
 .appointment form label input, .appointment form label textarea {
   @apply w-full border border-solid p-3 mt-3 rounded bg-secondary;
 }
@@ -317,10 +319,6 @@ body {
   @apply outline-none;
 }
 
-.appointment .button-secondary.next {
-  @apply text-white;
-  background: #0069FF;
-}
 /* single company page  */
 .single-company-banner {
   width: 100%;
@@ -469,6 +467,9 @@ body {
     @apply p-4;
   }
   .button-secondary {
+    padding: 14px 30px;
+  }
+  .button-tartary {
     padding: 14px 30px;
   }
   .banner-logo {

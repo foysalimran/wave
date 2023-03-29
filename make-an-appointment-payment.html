@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="assets/images/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/icofont.min.css" rel="stylesheet">
-    <link href="assets/css/typographt.css" rel="stylesheet">
-    <link href="assets/css/style.main.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <link href="assets/css/typographt.css" rel="stylesheet" />
+    <link href="assets/css/style.main.css" rel="stylesheet" />
     <title>Wave</title>
   </head>
 
@@ -18,7 +18,7 @@
           <div class="header-logo">
             <a href="index.html"
               ><img src="assets/images/Union-5.svg" alt="header logo"
-           ></a>
+            /></a>
           </div>
           <div class="md:hidden block">
             <div class="menu-toggle">
@@ -35,7 +35,7 @@
               <button class="button-primary relative">
                 <span>Book a consultant</span>
                 <span class="button-icon">
-                  <img src="assets/images/path-14113.svg" alt="button svg">
+                  <img src="assets/images/path-14113.svg" alt="button svg" />
                 </span>
               </button>
             </li>
@@ -51,7 +51,9 @@
     <div class="appointment">
       <div class="containers">
         <div class="p-5 md:p-10 lg:p-15 bg-white rounded-2xl">
-          <div class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid">
+          <div
+            class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid"
+          >
             <div class="progress">
               <div class="progress-content">
                 <div class="progress-item active">
@@ -66,7 +68,7 @@
                 <h6 class="mt-8 text-xs sm:text-sm">DETAILS</h6>
               </div>
               <div class="progress-content">
-                <div class="progress-item">
+                <div class="progress-item active">
                   <span>03</span>
                 </div>
                 <h6 class="mt-8 text-xs sm:text-sm">PAYMENT</h6>
@@ -80,36 +82,51 @@
             </div>
             <div class="date">
               <div class="py-14">
-                <p class="text-xs text-primary mb-3">STEP TWO</p>
-                <h2 class="text-xl md:text-2xl lg:text-4xl capitalize">Personal Details</h2>
+                <p class="text-xs text-primary mb-3">STEP THREE</p>
+                <h2 class="text-xl md:text-2xl lg:text-4xl capitalize">
+                  Payment Information
+                </h2>
               </div>
               <form class="flex flex-col">
                 <div class="md:flex gap-4">
                   <label for="name">
-                    Name
-                    <input class="w-full" type="text" id="name">
+                    First Name
+                    <input class="w-full" type="text" id="name" />
                   </label>
-                  <label for="phone">
-                    Phone
-                    <input type="number" id="phone">
+                  <label for="last-name">
+                    Last Name
+                    <input type="text" id="last-name" />
                   </label>
                 </div>
-                <label for="email">
-                  Email
-                  <input type="email" id="email">
-                </label>
-                <label for="review">
-                  Additional Comment
-                  <textarea
-                    id="review"
-                    cols="30"
-                    rows="8"
-                  ></textarea>
-                </label>
+                <div class="md:flex gap-4">
+                  <label for="number">
+                    Credit Card Number
+                    <input class="w-full" type="number" id="number" />
+                  </label>
+                  <label for="code">
+                    Security Code
+                    <input type="number" id="code" />
+                  </label>
+                </div>
+                <div class="md:flex gap-4">
+                  <label for="expiration">
+                    Card Expiration
+                    <input class="w-full" type="date" id="expiration" />
+                  </label>
+                  <label> </label>
+                </div>
               </form>
-              <div class="flex items-center justify-between mt-5 md:mt-10 lg:mt-15">
-                <a href="make-an-appointment.html" class="button-secondary">Back</a>
-                <a href="make-an-appointment-payment.html" class="button-tartary">Next</a>
+              <div
+                class="flex items-center justify-between mt-5 md:mt-10 lg:mt-15"
+              >
+                <a href="make-an-appointment-details.html" class="button-secondary"
+                  >Back</a
+                >
+                <a
+                  href="make-an-appointment-conformation.html"
+                  class="button-tartary"
+                  >Next</a
+                >
               </div>
             </div>
           </div>
@@ -124,7 +141,7 @@
               class="w-11 h-10"
               src="assets/images/footer-logo.svg"
               alt="footer logo"
-         ></a>
+          /></a>
           <p>Copyright &#169; 2023. All Right Reserved.</p>
         </div>
       </div>

@@ -2646,11 +2646,20 @@ body {
 
 .button-secondary {
   padding: 18px 40px;
-  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   border-radius: 35px;
   --tw-text-opacity: 1;
   color: rgb(0 105 255 / var(--tw-text-opacity));
+  font-size: 18px;
+}
+
+.button-tartary {
+  padding: 18px 40px;
+  border-radius: 35px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 105 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   font-size: 18px;
 }
 
@@ -3284,11 +3293,9 @@ body {
 /*MAKE AN APPOINTMENT DETAILS*/
 
 .appointment form label {
-  width: 100%;
-}
-
-.appointment form label:not(:last-child) {
   margin-bottom: 1.25rem;
+  display: inline-block;
+  width: 100%;
 }
 
 .appointment form label input, .appointment form label textarea {
@@ -3306,12 +3313,6 @@ body {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.appointment .button-secondary.next {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  background: #0069FF;
 }
 
 /* single company page  */
@@ -3608,6 +3609,10 @@ body {
   }
 
   .button-secondary {
+    padding: 14px 30px;
+  }
+
+  .button-tartary {
     padding: 14px 30px;
   }
 
