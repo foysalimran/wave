@@ -5,22 +5,40 @@
     <link rel="icon" href="assets/images/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="assets/css/icofont.min.css" rel="stylesheet" />
-    <link href="assets/css/typographt.css" rel="stylesheet" />
-    <link href="assets/css/style.main.css" rel="stylesheet" />
+       <!--====== Swiper css ======-->
+       <link rel="stylesheet" href="assets/css/swiper.min.css">
+       <!--====== Typography css ======-->
+       <link href="assets/css/typography.css" rel="stylesheet">
+        <!--====== Main css ======-->
+       <link href="assets/css/style.main.css" rel="stylesheet">
     <title>Wave</title>
+    <style>
+      .newDiv {
+        display: none;
+      }
+      .newDiv.show {
+        display: block;
+      }
+
+      .scheduleForm {
+        display: none;
+      }
+      .scheduleForm.show {
+        display: block;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="header py-4">
+    <div class="py-4 header">
       <div class="containers">
-        <div class="flex justify-between relative">
+        <div class="relative flex justify-between">
           <div class="header-logo">
             <a href="index.html"
               ><img src="assets/images/Union-5.svg" alt="header logo"
             /></a>
           </div>
-          <div class="md:hidden block">
+          <div class="block md:hidden">
             <div class="menu-toggle">
               <span></span>
               <span></span>
@@ -28,11 +46,14 @@
               <span></span>
             </div>
           </div>
-          <ul class="items-center main-menu md:flex hidden">
+          <ul class="items-center hidden main-menu md:flex">
             <li><a href="our-consultants.html">Our Consultants</a></li>
             <li><a href="index.html">Our companies</a></li>
             <li>
-              <a href="make-an-appointment.html" class="button-primary relative">
+              <a
+                href="make-an-appointment.html"
+                class="relative button-primary"
+              >
                 <span>Book a consultant</span>
                 <span class="button-icon">
                   <img src="assets/images/path-14113.svg" alt="button svg" />
@@ -50,9 +71,9 @@
     </div>
     <div class="appointment">
       <div class="containers">
-        <div class="p-5 md:p-10 lg:p-15 bg-white rounded-2xl">
+        <div class="p-5 bg-white md:p-10 lg:p-15 rounded-2xl">
           <div
-            class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid"
+            class="p-5 border border-solid bg-secondary md:p-10 lg:p-15 rounded-2xl"
           >
             <div class="progress">
               <div class="progress-content">
@@ -82,15 +103,15 @@
             </div>
             <div class="date">
               <div class="py-14">
-                <p class="text-xs text-primary mb-3">STEP ONE</p>
-                <h2 class="text-lg md:text-2xl lg:text-3xl capitalize">
+                <p class="mb-3 text-xs text-primary">STEP ONE</p>
+                <h2 class="text-lg capitalize md:text-2xl lg:text-3xl">
                   Select A Date & Time
                 </h2>
               </div>
-              <div class="flex justify-between items-center mb-10">
-                <i class="icofont-long-arrow-left text-2xl"></i>
+              <div class="flex items-center justify-between mb-10">
+                <i class="text-2xl icofont-long-arrow-left"></i>
                 <h3 class="text-xl md:text-2xl">March 2023</h3>
-                <i class="icofont-long-arrow-right text-2xl"></i>
+                <i class="text-2xl icofont-long-arrow-right"></i>
               </div>
               <div class="calender">
                 <table>
@@ -114,7 +135,30 @@
                       <td class="available">4</td>
                       <td class="available">5</td>
                       <td class="available">6</td>
+                      <td class="scheduleForm">
+                        <div
+                          class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4"
+                        >
+                          <div class="w-full">
+                            <p class="mb-2">Time In</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-in">Time In</option>
+                            </select>
+                          </div>
+                          <div class="w-full">
+                            <p class="mb-2">Time Out</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-out">Time Out</option>
+                            </select>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
+
                     <tr class="table-row">
                       <td class="available">7</td>
                       <td class="available">8</td>
@@ -123,6 +167,28 @@
                       <td class="available">11</td>
                       <td class="available">12</td>
                       <td class="available">13</td>
+                      <td class="scheduleForm">
+                        <div
+                          class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4"
+                        >
+                          <div class="w-full">
+                            <p class="mb-2">Time In</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-in">Time In</option>
+                            </select>
+                          </div>
+                          <div class="w-full">
+                            <p class="mb-2">Time Out</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-out">Time Out</option>
+                            </select>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr class="table-row">
                       <td>14</td>
@@ -132,6 +198,28 @@
                       <td>18</td>
                       <td>19</td>
                       <td>20</td>
+                      <td class="scheduleForm">
+                        <div
+                          class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4"
+                        >
+                          <div class="w-full">
+                            <p class="mb-2">Time In</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-in">Time In</option>
+                            </select>
+                          </div>
+                          <div class="w-full">
+                            <p class="mb-2">Time Out</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-out">Time Out</option>
+                            </select>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr class="table-row">
                       <td>21</td>
@@ -141,6 +229,28 @@
                       <td class="available">25</td>
                       <td class="available">26</td>
                       <td class="available">27</td>
+                      <td class="scheduleForm">
+                        <div
+                          class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4"
+                        >
+                          <div class="w-full">
+                            <p class="mb-2">Time In</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-in">Time In</option>
+                            </select>
+                          </div>
+                          <div class="w-full">
+                            <p class="mb-2">Time Out</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-out">Time Out</option>
+                            </select>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr class="table-row">
                       <td>28</td>
@@ -150,6 +260,28 @@
                       <td class="available">2</td>
                       <td class="available">3</td>
                       <td class="available">4</td>
+                      <td class="scheduleForm">
+                        <div
+                          class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4"
+                        >
+                          <div class="w-full">
+                            <p class="mb-2">Time In</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-in">Time In</option>
+                            </select>
+                          </div>
+                          <div class="w-full">
+                            <p class="mb-2">Time Out</p>
+                            <select
+                              class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none"
+                            >
+                              <option value="time-out">Time Out</option>
+                            </select>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -172,10 +304,10 @@
     </div>
     <div class="containers">
       <div class="footer">
-        <div class="flex justify-between items-center">
+        <div class="flex items-center justify-between">
           <a href="index.html"
             ><img
-              class="w-11 h-10"
+              class="h-10 w-11"
               src="assets/images/footer-logo.svg"
               alt="footer logo"
           /></a>
@@ -183,49 +315,11 @@
         </div>
       </div>
     </div>
-
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const mainMenu = document.querySelector(".main-menu");
-      menuToggle.addEventListener("click", function () {
-        menuToggle.classList.toggle("menu-active");
-        mainMenu.classList.toggle("menu-show");
-      });
-
-      const tr = document.querySelectorAll(".table-row");
-      let previousDiv = null;
-
-      tr.forEach((availableDate) => {
-        const available = availableDate.querySelectorAll(".available");
-
-        available.forEach((item) => {
-          item.addEventListener("click", function () {
-            const newDiv = document.createElement("div");
-            newDiv.classList.add("newDiv");
-            newDiv.innerHTML = `<div class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4">
-                      <div class="w-full">
-                        <p class="mb-2">Time In</p>
-                        <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
-                          <option value="time-in">Time In</option>
-                        </select>
-                      </div>
-                      <div class="w-full">
-                        <p class="mb-2">Time Out</p>
-                        <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
-                          <option value="time-out">Time Out</option>
-                        </select>
-                      </div>
-                    </div>`;
-            if (previousDiv) {
-              availableDate.removeChild(previousDiv);
-            }
-            const appended = availableDate.appendChild(newDiv);
-            if (appended === newDiv) {
-              previousDiv = newDiv;
-            }
-          });
-        });
-      });
-    </script>
+ <!--====== Swiper js ======-->
+ <script src="assets/js/jquery.min.js"></script>
+ <!--====== Swiper js ======-->
+ <script src="assets/js/swiper.min.js"></script>
+ <!--====== custom js ======-->
+ <script src="assets/js/custom.js"></script>
   </body>
 </html>

@@ -1,35 +1,57 @@
 /**
  * Table of contents
  * -----------------------------------
- * 1.HEADER STICKY
- * 2.HEADER ACTIVE ADD CLASS
- * 3.HEADER COLLAPSE
- * 4.FIXED HEADER
- * 5.Hero5 SLIDER
- * 6.GLIGHTBOX VIDEO HERO
- * 7.ODOMETER JS
- * 8.TESTIMONIAL SLIDER
- * 9.TESTIMONIAL SLIDER V2
- * 10.PORTFOLIO SLIDER
- * 11.BLOG SLIDER
- * 12.SERVICE SLIDER
- * 13.OVERVIEW SLIDER
- * 14.CONTACT FORM
- * 15.AJAX MAILCHIMP SUBSCRIBE
- * 16.LOCAL SUBSCRIPTION
- * 17.LOCAL SUBSCRIPTION 2
- * 18.SMOOTH SCROLL ON BUTTON CLICK
- * 19.SCREENSHOT SLIDER
- * DARK VERSION
+ * 1.HEADER MENU
+ * 2.SCHEDULE FORM
+ * 3.SINGLE COMPANY SLIDER
+ * 4.PORTFOLIO SLIDER
+
  */
 
 (function ($) {
     "use strict";
     var PATH = {};
+
+ /******************** 1.HEADER MENU  ********************/
+    PATH.HeaderMenu = function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainMenu = document.querySelector(".main-menu");
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("menu-active");
+        mainMenu.classList.toggle("menu-show");
+      });
+    }
+
+
+   /******************** 2.SCHEDULE FORM  ********************/
+    PATH.ScheduleForm = function () {
+      let tr = document.querySelectorAll(".table-row");
+      const scheduleForm = document.querySelectorAll(".scheduleForm");
+      tr.forEach((availableDate, idx) => {
+        const available = availableDate.querySelectorAll(".available");
+        available.forEach((item) => {
+          item.addEventListener("click", function () {
+            hideAllSelectedDates(); 
+            hideAllScheduleForm(); 
+            item.classList.add("selected-date");
+            scheduleForm[idx].classList.add("show");
+          });
+        });
+      });
+      function hideAllScheduleForm() {
+        scheduleForm.forEach((content) => content.classList.remove("show"));
+      }
+      function hideAllSelectedDates() {
+        const selectedDates = document.querySelectorAll(".selected-date");
+        selectedDates.forEach((date) => {
+          date.classList.remove("selected-date");
+        });
+      }
+    }
+
   
-  
-    /******************** 8.TESTIMONIAL SLIDER  ********************/
-    PATH.TestimonialSlide = function () {
+    /******************** 3.SINGLE COMPANY SLIDER  ********************/
+    PATH.SingleCompanySlider = function () {
       new Swiper(".single-company-swiper", {
         spaceBetween: 18,
         loop: true,
@@ -45,6 +67,8 @@
       });
   }; 
   
+
+   /******************** 3.PORTFOLIO SLIDER  ********************/
   PATH.PortfolioSlide = function () {
     new Swiper(".portfolio-swiper", {
       loop: true,
@@ -79,7 +103,9 @@
   
     /******************** DOCUMENT READY FUNCTION ********************/
     $(function () {
-      PATH.TestimonialSlide();
+      PATH.HeaderMenu();
+      PATH.ScheduleForm();
+      PATH.SingleCompanySlider();
       PATH.PortfolioSlide()
     });
   

@@ -135,9 +135,9 @@ body {
 }
 
 .header .main-menu.menu-show {
-  @apply absolute flex flex-col w-full items-start bg-white px-4;
+  @apply absolute flex flex-col w-full items-start bg-white p-4;
   top: 118%;
-  transition: 200ms ease;
+  transition: all 2s;
 }
 .header .main-menu.menu-show li {
   margin: 0 !important;
@@ -269,6 +269,15 @@ body {
   content: "";
   background-color: #f9e7e9;
   @apply absolute w-4 h-4 rounded-full top-1 -left-5;
+}
+
+.appointment .scheduleForm{
+  grid-column: 1 / -1;
+  @apply border border-solid bg-white p-0;
+}
+.appointment .selected-date{
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0% !important; 
+  @apply text-white;
 }
 
 /*REVIEW*/
