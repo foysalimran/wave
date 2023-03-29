@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="assets/images/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/icofont.min.css" rel="stylesheet">
-    <link href="assets/css/typographt.css" rel="stylesheet">
-    <link href="assets/css/style.main.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <link href="assets/css/typographt.css" rel="stylesheet" />
+    <link href="assets/css/style.main.css" rel="stylesheet" />
     <title>Wave</title>
   </head>
 
@@ -18,7 +18,7 @@
           <div class="header-logo">
             <a href="index.html"
               ><img src="assets/images/Union-5.svg" alt="header logo"
-           ></a>
+            /></a>
           </div>
           <div class="md:hidden block">
             <div class="menu-toggle">
@@ -32,12 +32,12 @@
             <li><a href="our-consultants.html">Our Consultants</a></li>
             <li><a href="index.html">Our companies</a></li>
             <li>
-              <button class="button-primary relative">
+              <a href="make-an-appointment.html" class="button-primary relative">
                 <span>Book a consultant</span>
                 <span class="button-icon">
-                  <img src="assets/images/path-14113.svg" alt="button svg">
+                  <img src="assets/images/path-14113.svg" alt="button svg" />
                 </span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -51,7 +51,9 @@
     <div class="appointment">
       <div class="containers">
         <div class="p-5 md:p-10 lg:p-15 bg-white rounded-2xl">
-          <div class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid">
+          <div
+            class="bg-secondary p-5 md:p-10 lg:p-15 rounded-2xl border border-solid"
+          >
             <div class="progress">
               <div class="progress-content">
                 <div class="progress-item active">
@@ -81,7 +83,9 @@
             <div class="date">
               <div class="py-14">
                 <p class="text-xs text-primary mb-3">STEP ONE</p>
-                <h2 class="text-xl md:text-2xl lg:text-4xl capitalize">Select A Date & Time</h2>
+                <h2 class="text-lg md:text-2xl lg:text-3xl capitalize">
+                  Select A Date & Time
+                </h2>
               </div>
               <div class="flex justify-between items-center mb-10">
                 <i class="icofont-long-arrow-left text-2xl"></i>
@@ -102,7 +106,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="table-row">
                       <td class="available">28</td>
                       <td class="available">1</td>
                       <td class="available">2</td>
@@ -111,7 +115,7 @@
                       <td class="available">5</td>
                       <td class="available">6</td>
                     </tr>
-                    <tr>
+                    <tr class="table-row">
                       <td class="available">7</td>
                       <td class="available">8</td>
                       <td class="available">9</td>
@@ -120,7 +124,7 @@
                       <td class="available">12</td>
                       <td class="available">13</td>
                     </tr>
-                    <tr>
+                    <tr class="table-row">
                       <td>14</td>
                       <td>15</td>
                       <td>16</td>
@@ -129,7 +133,7 @@
                       <td>19</td>
                       <td>20</td>
                     </tr>
-                    <tr>
+                    <tr class="table-row">
                       <td>21</td>
                       <td>22</td>
                       <td>23</td>
@@ -138,7 +142,7 @@
                       <td class="available">26</td>
                       <td class="available">27</td>
                     </tr>
-                    <tr>
+                    <tr class="table-row">
                       <td>28</td>
                       <td>29</td>
                       <td>30</td>
@@ -158,7 +162,9 @@
               </ul>
             </div>
             <div class="flex justify-end">
-              <a href="make-an-appointment-details.html" class="button-tartary">Next</a>
+              <a href="make-an-appointment-details.html" class="button-tartary"
+                >Next</a
+              >
             </div>
           </div>
         </div>
@@ -172,14 +178,13 @@
               class="w-11 h-10"
               src="assets/images/footer-logo.svg"
               alt="footer logo"
-         ></a>
+          /></a>
           <p>Copyright &#169; 2023. All Right Reserved.</p>
         </div>
       </div>
     </div>
 
     <script>
-      // const available = document.querySelectorAll(".available");
       const menuToggle = document.querySelector(".menu-toggle");
       const mainMenu = document.querySelector(".main-menu");
       menuToggle.addEventListener("click", function () {
@@ -187,9 +192,40 @@
         mainMenu.classList.toggle("menu-show");
       });
 
-      // available.forEach((availableDate) => {
+      const tr = document.querySelectorAll(".table-row");
+      let previousDiv = null;
 
-      // })
+      tr.forEach((availableDate) => {
+        const available = availableDate.querySelectorAll(".available");
+
+        available.forEach((item) => {
+          item.addEventListener("click", function () {
+            const newDiv = document.createElement("div");
+            newDiv.classList.add("newDiv");
+            newDiv.innerHTML = `<div class="py-5 md:py-7 px-7 md:px-10 bg-white rounded-lg md:flex gap-4">
+                      <div class="w-full">
+                        <p class="mb-2">Time In</p>
+                        <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
+                          <option value="time-in">Time In</option>
+                        </select>
+                      </div>
+                      <div class="w-full">
+                        <p class="mb-2">Time Out</p>
+                        <select class="w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1 focus:outline-none">
+                          <option value="time-out">Time Out</option>
+                        </select>
+                      </div>
+                    </div>`;
+            if (previousDiv) {
+              availableDate.removeChild(previousDiv);
+            }
+            const appended = availableDate.appendChild(newDiv);
+            if (appended === newDiv) {
+              previousDiv = newDiv;
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>

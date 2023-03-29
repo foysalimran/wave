@@ -17,7 +17,7 @@ body {
   @apply bg-secondary;
 }
 .containers {
-  @apply container mx-auto px-4;
+  @apply container xl:container mx-auto px-4;
 }
 
 .button-primary {
@@ -55,7 +55,7 @@ body {
   @apply py-11 md:py-20;
 }
 .page-title h1 {
-  @apply text-3xl sm:text-5xl md:text-6xl;
+  @apply text-2xl sm:text-4xl md:text-5xl;
 }
 /*HEADER CSS*/
 .header .header-logo {
@@ -75,7 +75,7 @@ body {
   padding-left: 30px;
   border-left: 1px solid #e6efff;
 }
-.header ul li button {
+.header ul li .button-primary {
   @apply text-base;
   padding: 12px 59px 12px 26px;
 }
@@ -149,6 +149,9 @@ body {
 }
 
 /*COMPANIES*/
+.companies .companies-title {
+  background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+}
 .companies .filter-item select {
   @apply w-full bg-secondary border border-solid p-2 rounded-lg mb-5 text-light-gray1;
 }
@@ -163,7 +166,7 @@ body {
 }
 .companies .category {
   font-size: 14px;
-  @apply mb-3 sm:mb-5;
+  @apply mb-2 sm:mb-4;
 }
 .companies .category span {
   padding: 2px 10px;
@@ -214,7 +217,7 @@ body {
 }
 .appointment .progress .progress-item span {
   letter-spacing: 1.08px;
-  @apply w-10 md:w-16 lg:w-24 h-10 md:h-16 lg:h-24 rounded-full flex items-center justify-center text-white text-lg md:text-2xl lg:text-4xl font-bold bg-gallery;
+  @apply w-10 md:w-16 lg:w-24 h-10 md:h-16 lg:h-24 rounded-full flex items-center justify-center text-white text-lg md:text-2xl lg:text-3xl font-bold bg-gallery;
 }
 .appointment .progress .progress-item.active {
   @apply border-primary bg-white;
@@ -252,28 +255,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 1024px) {
-  .appointment .progress::after {
-    top: 40px;
-  }
-}
-
-@media screen and (max-width: 448px) {
-  .appointment .calender {
-    overflow-x: scroll;
-  }
-  .appointment .calender table {
-    width: 334px;
-  }
-  .appointment .progress::after {
-    top: 30px;
-  }
-  .successfull-box .button-tartary{
-    font-size: 12px;
-    padding: 10px 20px;
-
-  }
-}
 
 .appointment .tags ul {
   @apply xsmin:flex gap-10 mt-5;
@@ -323,7 +304,10 @@ body {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
   @apply outline-none;
 }
-
+/*CONFORMATION*/
+.conformation .conformation-icon {
+  background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+}
 /* single company page  */
 .single-company-banner {
   width: 100%;
@@ -472,6 +456,12 @@ body {
   @apply text-dark-secondary;
 }
 
+@media screen and (max-width: 1024px) {
+  .appointment .progress::after {
+    top: 40px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .button-primary {
     padding: 14px 70px 14px 25px;
@@ -495,5 +485,22 @@ body {
   }
   .successfull-box .button-tartary{
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .appointment .calender {
+    overflow-x: scroll;
+  }
+  .appointment .calender table {
+    width: 334px;
+  }
+  .appointment .progress::after {
+    top: 30px;
+  }
+  .successfull-box .button-tartary{
+    font-size: 12px;
+    padding: 10px 20px;
+
   }
 }
