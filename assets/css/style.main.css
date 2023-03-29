@@ -529,46 +529,6 @@ video {
   padding-left: 1rem;
 }
 
-@media (min-width: 600px) {
-  .\!container {
-    max-width: 600px !important;
-  }
-
-  .container {
-    max-width: 600px;
-  }
-}
-
-@media (min-width: 728px) {
-  .\!container {
-    max-width: 728px !important;
-  }
-
-  .container {
-    max-width: 728px;
-  }
-}
-
-@media (min-width: 984px) {
-  .\!container {
-    max-width: 984px !important;
-  }
-
-  .container {
-    max-width: 984px;
-  }
-}
-
-@media (min-width: 1240px) {
-  .\!container {
-    max-width: 1240px !important;
-  }
-
-  .container {
-    max-width: 1240px;
-  }
-}
-
 @media (min-width: 1280px) {
   .\!container {
     max-width: 1280px !important;
@@ -2629,30 +2589,6 @@ body {
   padding-left: 1rem;
 }
 
-@media (min-width: 600px) {
-  .containers {
-    max-width: 600px;
-  }
-}
-
-@media (min-width: 728px) {
-  .containers {
-    max-width: 728px;
-  }
-}
-
-@media (min-width: 984px) {
-  .containers {
-    max-width: 984px;
-  }
-}
-
-@media (min-width: 1240px) {
-  .containers {
-    max-width: 1240px;
-  }
-}
-
 @media (min-width: 1280px) {
   .containers {
     max-width: 1280px;
@@ -2673,30 +2609,6 @@ body {
     margin-left: auto;
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-
-  @media (min-width: 600px) {
-    .containers {
-      max-width: 600px;
-    }
-  }
-
-  @media (min-width: 728px) {
-    .containers {
-      max-width: 728px;
-    }
-  }
-
-  @media (min-width: 984px) {
-    .containers {
-      max-width: 984px;
-    }
-  }
-
-  @media (min-width: 1240px) {
-    .containers {
-      max-width: 1240px;
-    }
   }
 
   @media (min-width: 1280px) {
@@ -3803,30 +3715,6 @@ body {
     margin-left: auto;
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-
-  @media (min-width: 600px) {
-    .sm\:container {
-      max-width: 600px;
-    }
-  }
-
-  @media (min-width: 728px) {
-    .sm\:container {
-      max-width: 728px;
-    }
-  }
-
-  @media (min-width: 984px) {
-    .sm\:container {
-      max-width: 984px;
-    }
-  }
-
-  @media (min-width: 1240px) {
-    .sm\:container {
-      max-width: 1240px;
-    }
   }
 
   @media (min-width: 1280px) {
