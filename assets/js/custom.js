@@ -100,19 +100,105 @@
       },
     });
   }; 
-  
+
+
+   /******************** 3.PORTFOLIO SLIDER  ********************/
+  PATH.RangeInput = function () {
+    const dragEl1 = document.querySelector('.range-slider-drag1');
+    const dragEl2 = document.querySelector('.range-slider-drag2');
+    const innerTrack = document.querySelector('.range-slider-track-inner');
+    const inputEl1 = document.querySelector('.input-input1');
+    const inputEl2 = document.querySelector('.input-input2');
+
+    console.log(dragEl1)
+    console.log(dragEl2)
+    console.log(innerTrack)
+    
+    let sliderWidth = 180;
+    let isDragging1 = false;
+    let isDragging2 = false;
+    let currentPosition1 = 0;
+    let currentPosition2 = 180;
+    let initialClickPosition1 = 0;
+    let initialClickPosition2 = 180;
+    let clickX;
+    
+    dragEl1.addEventListener('mousedown', function(e) {
+      isDragging1 = true;
+      clickX = e.pageX;
+      initialClickPosition1 = currentPosition1; // 11
+    });
+    
+    window.addEventListener('mousemove', function(e) {
+      if (!isDragging1) {
+        return;
+      }
+    
+      const mouseDiff = e.pageX - clickX; // 5
+      const newPosition = initialClickPosition1 + mouseDiff;
+    
+      if (newPosition < 0 || newPosition > sliderWidth) {
+        return;
+      }
+    
+      currentPosition1 = newPosition;
+      dragEl1.style.left = `${newPosition}px`;
+      innerTrack.style.left = `${newPosition + 5}px`;
+      inputEl1.value = Math.round(100 * currentPosition1 / sliderWidth);
+    });
+    
+    dragEl1.addEventListener('mouseup', function() {
+      isDragging1 = false;
+    });
+    
+    
+    // 2
+    dragEl2.addEventListener('mousedown', function(e) {
+      isDragging2 = true;
+      clickX = e.pageX;
+      initialClickPosition2 = currentPosition2; // 11
+    });
+    
+    window.addEventListener('mousemove', function(e) {
+      if (!isDragging2) {
+        return;
+      }
+    
+      const mouseDiff = e.pageX - clickX; // 5
+      const newPosition = initialClickPosition2 + mouseDiff;
+    
+      if (newPosition < 0 || newPosition > sliderWidth) {
+        return;
+      }
+    
+      currentPosition2 = newPosition;
+      dragEl2.style.left = `${newPosition}px`;
+      innerTrack.style.right = `${sliderWidth - newPosition + 5}px`;
+      inputEl2.value = Math.round(100 * currentPosition2 / sliderWidth);
+    });
+    
+    dragEl2.addEventListener('mouseup', function() {
+      isDragging2 = false;
+    });
+  }; 
+
+
+
     /******************** DOCUMENT READY FUNCTION ********************/
     $(function () {
       PATH.HeaderMenu();
       PATH.ScheduleForm();
       PATH.SingleCompanySlider();
       PATH.PortfolioSlide()
+      
     });
   
   
   
     /******************** WINDOW ON LOAD FUNCTION ********************/
-    $(window).on("load", function () {});
+    $(window).on("load", function () {
+      PATH.RangeInput()
+    });
   })(jQuery);
 
   

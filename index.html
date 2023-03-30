@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--====== fontawesome css ======-->
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
-     <!--====== Swiper css ======-->
-     <link rel="stylesheet" href="assets/css/swiper.min.css">
-     <!--====== Typography css ======-->
-     <link href="assets/css/typography.css" rel="stylesheet">
-      <!--====== Main css ======-->
-     <link href="assets/css/style.main.css" rel="stylesheet">
+    <!--====== Swiper css ======-->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!--====== Typography css ======-->
+    <link href="assets/css/typography.css" rel="stylesheet">
+    <!--====== Main css ======-->
+    <link href="assets/css/style.main.css" rel="stylesheet">
     <title>Wave</title>
   </head>
 
@@ -37,7 +37,10 @@
             <li><a href="our-consultants.html">Our Consultants</a></li>
             <li><a href="index.html">Our companies</a></li>
             <li>
-              <a href="make-an-appointment.html" class="button-primary relative">
+              <a
+                href="make-an-appointment.html"
+                class="button-primary relative"
+              >
                 <span>Book a consultant</span>
                 <span class="button-icon">
                   <img src="assets/images/path-14113.svg" alt="button svg">
@@ -71,25 +74,45 @@
                   <option value="location">Location</option>
                 </select>
               </div>
-              <div class="filter-item">
+              <div class="filter-item mb-16">
                 <p>Company Size</p>
-                <input type="range">
+                <div class="range-slider">
+                  <div class="range-slider-track"></div>
+                  <div class="range-slider-track-inner"></div>
+                  <div class="absolute top-0 left-0 range-slider-drag1 w-6">
+                    <div class="range-slider-drag"></div>
+                    <input
+                      type="text"
+                      class="input-input1 range-input-value"
+                      value="0"
+                      disabled
+                   >
+                  </div>
+                  <div
+                    class="absolute top-0 range-slider-drag2 w-6"
+                    style="left: 180px"
+                  >
+                    <div class="range-slider-drag"></div>
+                    <input
+                      type="text"
+                      class="input-input2 range-input-value"
+                      value="100"
+                      disabled
+                   >
+                  </div>
+                </div>
               </div>
-              <a class="block mt-8 text-primary underline text-right" href="#"
+              <a class="block text-primary underline text-right mt-8" href="#"
                 >Reset Filter</a
               >
             </div>
           </div>
           <div class="col-span-12 lg:col-span-9 rounded-xl">
-            <div class="companies-title ">
-              <h2>
-                Browse Our Companies
-              </h2>
+            <div class="companies-title">
+              <h2>Browse Our Companies</h2>
             </div>
             <div class="bg-white p-5 rounded-2xl">
-              <div
-                class="companies-industries mb-5"
-              >
+              <div class="companies-industries mb-5">
                 <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
@@ -119,9 +142,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="companies-industries mb-5"
-              >
+              <div class="companies-industries mb-5">
                 <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
@@ -151,9 +172,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="companies-industries mb-5"
-              >
+              <div class="companies-industries mb-5">
                 <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
@@ -183,9 +202,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="companies-industries mb-5"
-              >
+              <div class="companies-industries mb-5">
                 <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
@@ -215,9 +232,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="companies-industries"
-              >
+              <div class="companies-industries">
                 <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
@@ -264,11 +279,11 @@
         </div>
       </div>
     </div>
- <!--====== Swiper js ======-->
- <script src="assets/js/jquery.min.js"></script>
- <!--====== Swiper js ======-->
- <script src="assets/js/swiper.min.js"></script>
- <!--====== custom js ======-->
- <script src="assets/js/custom.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== custom js ======-->
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>

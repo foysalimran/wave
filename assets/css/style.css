@@ -472,6 +472,55 @@ body {
  background: transparent linear-gradient(90deg, #0069FF 0%, #7C3AED 100%)
 }
 
+/* range  */
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+}
+.range-slider {
+  width: 200px;
+  height: 6px;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 10px;
+  margin-bottom: 25px;
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+border: 1px solid #7070701A;
+
+}
+.range-slider-drag {
+  @apply bg-primary;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.range-slider-track {
+  height: 9px;
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+  position: relative;
+  top: 5px;
+}
+.range-slider-track-inner {
+  left: 5px;
+  right: 5px;
+  height: 9px;
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+  position: absolute;
+  top: 5px;
+  padding: 0 10px;
+}
+
+.range-slider .range-input-value {
+  background: none;
+  @apply text-sm text-light-gray1;
+
+}
+
+
 /* FOOTER SECTION  */
 .footer {
   @apply border-t-2 border-solid pt-4 pb-3 mt-12 md:mt-16;
