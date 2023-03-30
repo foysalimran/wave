@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="assets/images/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--====== Swiper css ======-->
-     <link rel="stylesheet" href="assets/css/swiper.min.css">
-     <!--====== Typography css ======-->
-     <link href="assets/css/typography.css" rel="stylesheet">
-      <!--====== Main css ======-->
-     <link href="assets/css/style.main.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--====== Swiper css ======-->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!--====== Typography css ======-->
+    <link href="assets/css/typography.css" rel="stylesheet" />
+    <!--====== Main css ======-->
+    <link href="assets/css/style.main.css" rel="stylesheet" />
     <title>Wave</title>
   </head>
 
@@ -21,7 +21,7 @@
           <div class="header-logo">
             <a href="index.html"
               ><img src="assets/images/Union-5.svg" alt="header logo"
-           ></a>
+            /></a>
           </div>
           <div class="md:hidden block">
             <div class="menu-toggle">
@@ -35,10 +35,13 @@
             <li><a href="our-consultants.html">Our Consultants</a></li>
             <li><a href="index.html">Our companies</a></li>
             <li>
-              <a href="make-an-appointment.html" class="button-primary relative">
+              <a
+                href="make-an-appointment.html"
+                class="button-primary relative"
+              >
                 <span>Book a consultant</span>
                 <span class="button-icon">
-                  <img src="assets/images/path-14113.svg" alt="button svg">
+                  <img src="assets/images/path-14113.svg" alt="button svg" />
                 </span>
               </a>
             </li>
@@ -69,17 +72,43 @@
                   <option value="location">Location</option>
                 </select>
               </div>
-              <div class="filter-item">
+              <div class="filter-item mb-16">
                 <p>Company Size</p>
-                <input type="range">
+                <div class="range-slider">
+                  <div class="range-slider-track"></div>
+                  <div class="range-slider-track-inner"></div>
+                  <div class="absolute top-0 left-0 range-slider-drag1 w-6">
+                    <div class="range-slider-drag"></div>
+                    <input
+                      type="text"
+                      class="input-input1 range-input-value"
+                      value="0"
+                      disabled
+                    />
+                  </div>
+                  <div class="absolute top-0 range-slider-drag2 w-6" style="left: 180px">
+                    <div
+                      class="range-slider-drag "
+                      
+                    ></div>
+                    <input
+                      type="text"
+                      class="input-input2 range-input-value"
+                      value="100"
+                      disabled
+                    />
+                  </div>
+                </div>
               </div>
-              <a class="block mt-8 text-primary underline text-right" href="#"
+              <a class="block text-primary underline text-right mt-8" href="#"
                 >Reset Filter</a
               >
             </div>
           </div>
           <div class="col-span-12 lg:col-span-9 rounded-xl">
-            <div class="companies-title py-4 md:py-6 px-8 md:px-10 mb-8 md:mb-12 rounded-2xl">
+            <div
+              class="companies-title py-4 md:py-6 px-8 md:px-10 mb-8 md:mb-12 rounded-2xl"
+            >
               <h2 class="text-lg sm:text-2xl lg:text-3xl text-white">
                 Browse Our Companies
               </h2>
@@ -96,12 +125,12 @@
                       <source
                         srcset="assets/images/Microsoft@2x.png"
                         media="(max-width: 640px)"
-                     >
+                      />
                       <img
                         class="w-full"
                         src="assets/images/Microsoft.png"
                         alt="Microsoft"
-                     >
+                      />
                     </picture>
                   </div>
                 </div>
@@ -128,12 +157,12 @@
                       <source
                         srcset="assets/images/Image3@2x.png"
                         media="(max-width: 640px)"
-                     >
+                      />
                       <img
                         class="w-full"
                         src="assets/images/Image3.png"
                         alt="Microsoft"
-                     >
+                      />
                     </picture>
                   </div>
                 </div>
@@ -160,12 +189,12 @@
                       <source
                         srcset="assets/images/NVIDIA@2x.png"
                         media="(max-width: 640px)"
-                     >
+                      />
                       <img
                         class="w-full"
                         src="assets/images/NVIDIA.png"
                         alt="Microsoft"
-                     >
+                      />
                     </picture>
                   </div>
                 </div>
@@ -192,12 +221,12 @@
                       <source
                         srcset="assets/images/treva@2x.png"
                         media="(max-width: 640px)"
-                     >
+                      />
                       <img
                         class="w-full"
                         src="assets/images/treva.png"
                         alt="Microsoft"
-                     >
+                      />
                     </picture>
                   </div>
                 </div>
@@ -225,7 +254,7 @@
                         class="w-full"
                         src="assets/images/82a406b2e75862562666579b3e855d31.svg"
                         alt="Microsoft"
-                     >
+                      />
                     </picture>
                   </div>
                 </div>
@@ -257,16 +286,16 @@
               class="w-11 h-10"
               src="assets/images/footer-logo.svg"
               alt="footer logo"
-         ></a>
+          /></a>
           <p>Copyright &#169; 2023. All Right Reserved.</p>
         </div>
       </div>
     </div>
- <!--====== Swiper js ======-->
- <script src="assets/js/jquery.min.js"></script>
- <!--====== Swiper js ======-->
- <script src="assets/js/swiper.min.js"></script>
- <!--====== custom js ======-->
- <script src="assets/js/custom.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== custom js ======-->
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
