@@ -629,14 +629,6 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
 .float-right {
   float: right;
 }
@@ -670,10 +662,6 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -702,10 +690,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -724,10 +708,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .mt-2 {
@@ -846,24 +826,12 @@ video {
   height: 2.5rem;
 }
 
-.h-11 {
-  height: 2.75rem;
-}
-
-.h-15 {
-  height: 60px;
-}
-
 .h-9 {
   height: 2.25rem;
 }
 
 .w-11 {
   width: 2.75rem;
-}
-
-.w-15 {
-  width: 60px;
 }
 
 .w-9 {
@@ -1947,11 +1915,6 @@ video {
   padding: 1.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1962,19 +1925,9 @@ video {
   padding-right: 1.75rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-4 {
@@ -1997,12 +1950,12 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-2 {
@@ -2055,6 +2008,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -2862,6 +2819,120 @@ body {
 
 .companies .companies-title {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%);
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .companies .companies-title {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.companies .companies-title h2 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .companies .companies-title h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .companies .companies-title h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.companies .companies-industries {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .companies .companies-industries {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .companies .companies-industries {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+.companies .companies-industries .companies-industries-image {
+  grid-column: span 4 / span 4;
+}
+
+@media (min-width: 768px) {
+  .companies .companies-industries .companies-industries-image {
+    grid-column: span 3 / span 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .companies .companies-industries .companies-industries-image {
+    grid-column: span 2 / span 2;
+  }
+}
+
+@media (max-width: 448px) {
+  .companies .companies-industries .companies-industries-image {
+    margin-bottom: 1rem;
+  }
+}
+
+.companies .companies-industries .companies-industries-content {
+  grid-column: span 8 / span 8;
+}
+
+@media (min-width: 768px) {
+  .companies .companies-industries .companies-industries-content {
+    grid-column: span 9 / span 9;
+  }
+}
+
+@media (min-width: 1280px) {
+  .companies .companies-industries .companies-industries-content {
+    grid-column: span 10 / span 10;
+  }
+}
+
+.companies .companies-industries .companies-industries-content .title {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .companies .companies-industries .companies-industries-content .title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .companies .filter-item select {
@@ -2958,10 +3029,10 @@ body {
   }
 }
 
-.consultants-info .button-primary {
+.consultants-info .button-primary, .consultants-info .button-tartary {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   font-size: 0.875rem;
@@ -2969,11 +3040,11 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .consultants-info .button-primary {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .consultants-info .button-primary, .consultants-info .button-tartary {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -3359,6 +3430,16 @@ body {
 
 .conformation .conformation-icon {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%) 0% 0%;
+  height: 60px;
+  width: 60px;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .conformation .conformation-icon {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 /* SINGLE COMPANY PAGE */
@@ -3399,9 +3480,20 @@ body {
 /* OVERVIEW SECTION  */
 
 .overview-link .icon {
-  padding: 22px;
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
-  border-radius: 10px;
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.overview-link .icon img {
+  height: 2.5rem;
+  width: 2.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .stock-img {
@@ -3518,7 +3610,7 @@ body {
 
 @media (min-width: 768px) {
   .portfolio {
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 60px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -3529,7 +3621,7 @@ body {
 
 @media (min-width: 1024px) {
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
     padding-top: 60px;
     padding-bottom: 5rem;
@@ -3616,13 +3708,61 @@ body {
 }
 
 .certification .overview-link .icon {
-  padding: 27px;
-  background: #fbfbfb;
-  border: 1px solid #7070701a;
+  height: 4rem;
+  width: 4rem;
+  border-width: 1px;
+  border-style: solid;
+}
+
+@media (min-width: 768px) {
+  .certification .overview-link .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certification .overview-link .icon {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 .certification .overview-link {
   border: 1px solid #7070701a;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  align-self: stretch;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .certification .overview-link {
+    flex-wrap: nowrap;
+    justify-self: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .certification .overview-link {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certification .overview-link {
+    width: 33.333333%;
+  }
 }
 
 .single-consultants .stock-img::before {
@@ -3813,10 +3953,6 @@ body {
     grid-column: span 6 / span 6;
   }
 
-  .sm\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -3825,16 +3961,8 @@ body {
     flex-direction: row;
   }
 
-  .sm\:flex-nowrap {
-    flex-wrap: nowrap;
-  }
-
   .sm\:justify-between {
     justify-content: space-between;
-  }
-
-  .sm\:justify-self-auto {
-    justify-self: auto;
   }
 
   .sm\:p-10 {
@@ -3849,16 +3977,6 @@ body {
     padding: 1.75rem;
   }
 
-  .sm\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
-
-  .sm\:py-11 {
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
-  }
-
   .sm\:text-left {
     text-align: left;
   }
@@ -3866,11 +3984,6 @@ body {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:text-base {
@@ -3894,24 +4007,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .md\:col-span-9 {
-    grid-column: span 9 / span 9;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
 
   .md\:mb-10 {
     margin-bottom: 2.5rem;
-  }
-
-  .md\:mb-12 {
-    margin-bottom: 3rem;
   }
 
   .md\:mb-8 {
@@ -3922,8 +4023,8 @@ body {
     margin-top: 2.5rem;
   }
 
-  .md\:mt-20 {
-    margin-top: 5rem;
+  .md\:mt-12 {
+    margin-top: 3rem;
   }
 
   .md\:mt-6 {
@@ -3936,14 +4037,6 @@ body {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-20 {
-    height: 5rem;
-  }
-
-  .md\:w-20 {
-    width: 5rem;
   }
 
   .md\:grid-cols-12 {
@@ -3971,14 +4064,9 @@ body {
     padding-right: 2.5rem;
   }
 
-  .md\:py-15 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .md\:py-7 {
@@ -3996,10 +4084,6 @@ body {
 
   .md\:pb-16 {
     padding-bottom: 4rem;
-  }
-
-  .md\:pb-20 {
-    padding-bottom: 5rem;
   }
 
   .md\:pb-6 {
@@ -4024,13 +4108,13 @@ body {
     line-height: 2.25rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -4101,19 +4185,9 @@ body {
     padding-right: 60px;
   }
 
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .lg\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:pb-10 {
@@ -4124,12 +4198,12 @@ body {
     padding-bottom: 60px;
   }
 
-  .lg\:pl-12 {
-    padding-left: 3rem;
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
   }
 
-  .lg\:pl-14 {
-    padding-left: 3.5rem;
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:text-2xl {
@@ -4158,38 +4232,5 @@ body {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:col-span-10 {
-    grid-column: span 10 / span 10;
-  }
-
-  .xl\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
-@media (max-width: 448px) {
-  .xs\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .xs\:block {
-    display: block;
-  }
-
-  .xs\:p-3 {
-    padding: 0.75rem;
-  }
-
-  .xs\:p-4 {
-    padding: 1rem;
   }
 }
