@@ -529,13 +529,13 @@ video {
   padding-left: 1rem;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1240px) {
   .\!container {
-    max-width: 1280px !important;
+    max-width: 1240px !important;
   }
 
   .container {
-    max-width: 1280px;
+    max-width: 1240px;
   }
 }
 
@@ -2057,10 +2057,6 @@ video {
   padding-left: 1.25rem;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -2609,9 +2605,9 @@ body {
   padding-left: 1rem;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1240px) {
   .containers {
-    max-width: 1280px;
+    max-width: 1240px;
   }
 }
 
@@ -2631,10 +2627,31 @@ body {
     padding-left: 1rem;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1240px) {
     .containers {
-      max-width: 1280px;
+      max-width: 1240px;
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .containers {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .containers {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containers {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -2693,8 +2710,8 @@ body {
 
 @media (min-width: 768px) {
   .page-title {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -2705,15 +2722,15 @@ body {
 
 @media (min-width: 640px) {
   .page-title h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
 @media (min-width: 768px) {
   .page-title h1 {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2750,6 +2767,8 @@ body {
 .header ul li .button-primary {
   font-size: 1rem;
   line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 105 255 / var(--tw-text-opacity));
   padding: 12px 59px 12px 26px;
 }
 
@@ -3034,6 +3053,10 @@ body {
   }
 }
 
+.appointment .progress .progress-content h6 {
+  letter-spacing: 2px;
+}
+
 .appointment .progress .progress-item {
   display: flex;
   height: 4rem;
@@ -3041,7 +3064,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(239 239 239 / var(--tw-border-opacity));
@@ -3107,6 +3130,25 @@ body {
   background: transparent linear-gradient(90deg, #0069ff 0%, #7c3aed 100%) 0% 0%;
 }
 
+.appointment .progress .progress-item.active span i {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .appointment .progress .progress-item.active span i {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .appointment .progress .progress-item.active span i {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 .appointment .tags {
   margin-left: 1.25rem;
 }
@@ -3116,7 +3158,22 @@ body {
   border-collapse: collapse;
 }
 
+.appointment th,
+.appointment td {
+  cursor: not-allowed;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .appointment th,
+.appointment td {
+    padding: 1rem;
+  }
+}
+
 .appointment th {
+  cursor: auto;
   background-color: inherit;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -3133,6 +3190,9 @@ body {
 }
 
 .appointment td {
+  margin-bottom: 0.25rem;
+  width: 100%;
+  border-radius: 0.25rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
@@ -3142,33 +3202,9 @@ body {
 
 @media (min-width: 640px) {
   .appointment td {
+    margin-bottom: 0.75rem;
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-}
-
-.appointment th,
-.appointment td {
-  padding: 0.25rem;
-  text-align: center;
-}
-
-@media (min-width: 640px) {
-  .appointment th,
-.appointment td {
-    padding: 1rem;
-  }
-}
-
-.appointment td {
-  margin-bottom: 0.25rem;
-  width: 100%;
-  border-radius: 0.25rem;
-}
-
-@media (min-width: 640px) {
-  .appointment td {
-    margin-bottom: 0.75rem;
   }
 }
 
@@ -3178,6 +3214,7 @@ body {
 
 .appointment td.available {
   background: transparent linear-gradient(90deg, #e6efff 0%, #f0eafd 100%);
+  cursor: pointer;
 }
 
 .appointment tr {
@@ -3809,9 +3846,9 @@ body {
     padding-left: 1rem;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1240px) {
     .sm\:container {
-      max-width: 1280px;
+      max-width: 1240px;
     }
   }
 }
@@ -3884,13 +3921,14 @@ body {
     padding: 1.75rem;
   }
 
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .sm\:py-11 {
     padding-top: 2.75rem;
     padding-bottom: 2.75rem;
-  }
-
-  .sm\:pl-7 {
-    padding-left: 1.75rem;
   }
 
   .sm\:text-left {
