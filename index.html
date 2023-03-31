@@ -5,12 +5,14 @@
     <link rel="icon" href="assets/images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--====== Swiper css ======-->
-     <link rel="stylesheet" href="assets/css/swiper.min.css">
-     <!--====== Typography css ======-->
-     <link href="assets/css/typography.css" rel="stylesheet">
-      <!--====== Main css ======-->
-     <link href="assets/css/style.main.css" rel="stylesheet">
+    <!--====== fontawesome css ======-->
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <!--====== Swiper css ======-->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!--====== Typography css ======-->
+    <link href="assets/css/typography.css" rel="stylesheet">
+    <!--====== Main css ======-->
+    <link href="assets/css/style.main.css" rel="stylesheet">
     <title>Wave</title>
   </head>
 
@@ -35,7 +37,10 @@
             <li><a href="our-consultants.html">Our Consultants</a></li>
             <li><a href="index.html">Our companies</a></li>
             <li>
-              <a href="make-an-appointment.html" class="button-primary relative">
+              <a
+                href="make-an-appointment.html"
+                class="button-primary relative"
+              >
                 <span>Book a consultant</span>
                 <span class="button-icon">
                   <img src="assets/images/path-14113.svg" alt="button svg">
@@ -56,7 +61,7 @@
         <div class="grid gap-4 md:grid-cols-12">
           <div class="col-span-12 lg:col-span-3">
             <div class="rounded-2xl bg-white p-4 sm:p-5">
-              <h3 class="text-2xl mb-7">Filter by</h3>
+              <h3 class="text-xl mb-5">Filter by</h3>
               <div class="filter-item">
                 <p>Industry</p>
                 <select>
@@ -69,26 +74,46 @@
                   <option value="location">Location</option>
                 </select>
               </div>
-              <div class="filter-item">
+              <div class="filter-item mb-16">
                 <p>Company Size</p>
-                <input type="range">
+                <div class="range-slider">
+                  <div class="range-slider-track"></div>
+                  <div class="range-slider-track-inner"></div>
+                  <div class="absolute top-0 left-0 range-slider-drag1 w-6">
+                    <div class="range-slider-drag"></div>
+                    <input
+                      type="text"
+                      class="input-input1 range-input-value"
+                      value="0"
+                      disabled
+                   >
+                  </div>
+                  <div
+                    class="absolute top-0 range-slider-drag2 w-6"
+                    style="left: 180px"
+                  >
+                    <div class="range-slider-drag"></div>
+                    <input
+                      type="text"
+                      class="input-input2 range-input-value"
+                      value="100"
+                      disabled
+                   >
+                  </div>
+                </div>
               </div>
-              <a class="block mt-8 text-primary underline text-right" href="#"
+              <a class="block text-primary underline text-right mt-8" href="#"
                 >Reset Filter</a
               >
             </div>
           </div>
           <div class="col-span-12 lg:col-span-9 rounded-xl">
-            <div class="companies-title py-4 md:py-6 px-8 md:px-10 mb-8 md:mb-12 rounded-2xl">
-              <h2 class="text-lg sm:text-2xl lg:text-3xl text-white">
-                Browse Our Companies
-              </h2>
+            <div class="companies-title">
+              <h2>Browse Our Companies</h2>
             </div>
             <div class="bg-white p-5 rounded-2xl">
-              <div
-                class="p-4 sm:p-7 border border-solid bg-secondary xs:block grid gap-4 items-center grid-cols-12 rounded-2xl mb-5"
-              >
-                <div class="col-span-4 md:col-span-3 xl:col-span-2 xs:mb-4">
+              <div class="companies-industries mb-5">
+                <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
                   >
@@ -105,9 +130,9 @@
                     </picture>
                   </div>
                 </div>
-                <div class="col-span-8 md:col-span-9 xl:col-span-10">
-                  <h3 class="text-lg sm:text-2xl mb-4">
-                    <a href="/single-company.html">Microsoft</a>
+                <div class="companies-industries-content">
+                  <h3 class="title">
+                    <a href="single-company.html">Microsoft</a>
                   </h3>
                   <p class="category">Category: <span>SOFTWARE</span></p>
                   <p>
@@ -117,10 +142,8 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="p-4 sm:p-7 border border-solid bg-secondary xs:block grid gap-4 items-center grid-cols-12 rounded-2xl mb-5"
-              >
-                <div class="col-span-4 md:col-span-3 xl:col-span-2 xs:mb-4">
+              <div class="companies-industries mb-5">
+                <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
                   >
@@ -137,9 +160,9 @@
                     </picture>
                   </div>
                 </div>
-                <div class="col-span-8 md:col-span-9 xl:col-span-10">
-                  <h3 class="text-lg sm:text-2xl mb-4">
-                    <a href="/single-company.html">N7 Real Estate</a>
+                <div class="companies-industries-content">
+                  <h3 class="title">
+                    <a href="single-company.html">N7 Real Estate</a>
                   </h3>
                   <p class="category">Category: <span>REAL ESTATE</span></p>
                   <p class="text-sm lg:text-base">
@@ -149,10 +172,8 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="p-4 sm:p-7 border border-solid bg-secondary xs:block grid gap-4 items-center grid-cols-12 rounded-2xl mb-5"
-              >
-                <div class="col-span-4 md:col-span-3 xl:col-span-2 xs:mb-4">
+              <div class="companies-industries mb-5">
+                <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
                   >
@@ -169,9 +190,9 @@
                     </picture>
                   </div>
                 </div>
-                <div class="col-span-8 md:col-span-9 xl:col-span-10">
-                  <h3 class="text-lg sm:text-2xl mb-4">
-                    <a href="/single-company.html">Nvidia</a>
+                <div class="companies-industries-content">
+                  <h3 class="title">
+                    <a href="single-company.html">Nvidia</a>
                   </h3>
                   <p class="category">Category: <span>SOFTWARE</span></p>
                   <p class="text-sm lg:text-base">
@@ -181,10 +202,8 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="p-4 sm:p-7 border border-solid bg-secondary xs:block grid gap-4 items-center grid-cols-12 rounded-2xl mb-5"
-              >
-                <div class="col-span-4 md:col-span-3 xl:col-span-2 xs:mb-4">
+              <div class="companies-industries mb-5">
+                <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
                   >
@@ -201,9 +220,9 @@
                     </picture>
                   </div>
                 </div>
-                <div class="col-span-8 md:col-span-9 xl:col-span-10">
-                  <h3 class="text-lg sm:text-2xl mb-4">
-                    <a href="/single-company.html">Treva</a>
+                <div class="companies-industries-content">
+                  <h3 class="title">
+                    <a href="single-company.html">Treva</a>
                   </h3>
                   <p class="category">Category: <span>TRAVEL</span></p>
                   <p class="text-sm lg:text-base">
@@ -213,10 +232,8 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="p-4 sm:p-7 border border-solid bg-secondary xs:block grid gap-4 items-center grid-cols-12 rounded-2xl"
-              >
-                <div class="col-span-4 md:col-span-3 xl:col-span-2 xs:mb-4">
+              <div class="companies-industries">
+                <div class="companies-industries-image">
                   <div
                     class="p-3 sm:p-7 bg-white rounded-xl border border-solid"
                   >
@@ -229,9 +246,9 @@
                     </picture>
                   </div>
                 </div>
-                <div class="col-span-8 md:col-span-9 xl:col-span-10">
-                  <h3 class="text-lg sm:text-2xl mb-4">
-                    <a href="/single-company.html">Slack</a>
+                <div class="companies-industries-content">
+                  <h3 class="title">
+                    <a href="single-company.html">Slack</a>
                   </h3>
                   <p class="category">Category: <span>SOFTWARE</span></p>
                   <p class="text-sm lg:text-base">
@@ -262,11 +279,11 @@
         </div>
       </div>
     </div>
- <!--====== Swiper js ======-->
- <script src="assets/js/jquery.min.js"></script>
- <!--====== Swiper js ======-->
- <script src="assets/js/swiper.min.js"></script>
- <!--====== custom js ======-->
- <script src="assets/js/custom.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== custom js ======-->
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
